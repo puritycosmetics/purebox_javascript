@@ -1,0 +1,9 @@
+{
+  "firebase": "purebox-production",
+  "public": "app",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}

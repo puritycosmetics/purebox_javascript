@@ -1,0 +1,144 @@
+<div class="container" ng-init="getCustomerInfo()">
+  <div class="account-container center">
+        <h2><a href="/">PureBox</a></h2>
+        <hr />
+        <div class="row" ng-hide="!didCheckout">
+              <div class="sub">
+                  <h4>{{profile.fname}}&nbsp;{{profile.lname}}</h4>
+              </div>
+              <div class="sub">
+                  <strong>Invoice: </strong><br />
+                  {{ invoice }}
+              </div>          
+              <div class="sub">
+                  <strong>Start date: </strong><br />
+                  {{ start_date }}
+              </div>
+              <div class="sub">
+                  <strong>End date: </strong><br />
+                  {{ end_date }}
+              </div>
+              <div class="sub">
+                  <strong>Plan: </strong><br />
+                  {{ plan }} (${{ total_amount }})
+              </div> 
+              <div class="sub" style="text-transform:capitalize">
+                  <strong>Status: </strong><br />
+                  {{ status }}
+              </div>
+              <!--div class="sub">
+                  <a href="subscribe.html#/subscription">Edit Subscription</a>
+              </div-->                         
+        </div>
+        <div class="row">
+              <h4>Profile</h4>             
+              <div class="sub">
+                <strong>Skin tone</strong>
+                <br />{{profile.skintone}}
+              </div>
+              <div class="sub">
+                <strong>Skin type</strong>
+                <br />{{profile.skintype}}
+              </div>
+              <div class="sub">
+                <strong>Email:</strong>
+                <br />{{profile.email}}
+              </div>
+              <div class="sub">
+                <a href="subscribe.html#/profile">Edit Profile</a>
+              </div>             
+              <!--div class="sub">
+                <strong>Subscription term</strong>
+                <br />{{profile.term}}
+              </div-->
+        </div>        
+        <div class="row" ng-hide="!didCheckout">
+          <h4>Billing Info</h4>
+          <div class="sub">
+              <strong>Address 1: </strong><br />
+              {{ address1 }}
+          </div>
+          <div class="sub">
+              <strong>Address 2: </strong><br />
+              {{ address2 }}
+          </div>
+          <div class="sub">
+              <strong>City: </strong><br />
+              {{ city }}
+          </div>                                  
+          <div class="sub">
+              <strong>State: </strong><br />
+              {{ state }}
+          </div> 
+          <div class="sub">
+              <strong>Zip: </strong><br />
+              {{ zip }}
+          </div>
+          <div class="sub">
+              <strong>Phone: </strong><br />
+              {{ phone }}
+          </div>
+          <div class="sub">
+              <strong>Email: </strong><br />
+              {{ email }}
+          </div>
+          <!--div class="sub">
+            <a href="subscribe.html#/billing">Edit Billing Info</a>
+          </div-->          
+          <div class="sub">
+              *Subscription will automatically renew on end date for same term length<br />
+          </div>                                                  
+        </div>
+        <div class="row" ng-show="!didCheckout">
+              You have not finished completing your subscription order.  Please complete your subscription <a ng-click="assignServiceValues()" href="/subscribe.html#/shipping">here</a>.
+        </div>  
+        <div class="row">
+          <form role="form">
+              <h3>Change Password</h3>
+              <hr />
+              <div class="sub">
+                <strong>Old Password:</strong><br />
+                <input type="password" ng-keypress="clear()" ng-model="oldpass" />
+              </div>
+              <div class="sub">              
+                <strong>New Password:</strong><br />
+                <input type="password" ng-keypress="clear()" ng-model="newpass" />
+              </div>
+              <div class="sub">
+                <strong>Confirm New Password:</strong><br />
+                <input type="password" ng-keypress="clear()" ng-model="confirm" />
+              </div>
+
+              <br />
+
+            <button class="mdl-button mdl-js-button mdl-button--raised" ng-click="changePassword(oldpass, newpass, confirm)">Change Password</button>&nbsp;&nbsp;
+
+            <strong class="mdl-button mdl-js-button mdl-button--raised" role="button" ng-click="logout()">Log Out</strong>
+
+            <p class="error" ng-show="err">{{err}}</p>
+            <p class="good" ng-show="msg">{{msg}}</p>
+          </form>
+
+          <br /><br /><br /><br />  
+
+        </div>
+        <!--div>
+          <form>
+            <h3>Change Email</h3>
+
+            <p class="form-group">
+              <label>New Email:</label>
+              <input type="text" ng-keypress="clear()" ng-model="newEmail" />
+            </p>
+
+            <p class="form-group">
+              <label>Password:</label>
+              <input type="password" ng-keypress="clear()" ng-model="pass" />
+            </p>
+
+            <button ng-click="changeEmail(pass, newEmail)">update email</button>
+          </form>
+        </div-->
+        <div ng-repeat="message in messages" class="alert alert-{{message.type}}">{{message.text}}</div>
+    </div>
+</div>

@@ -1,0 +1,51 @@
+.profile {
+	cursor: pointer;
+}
+.profile .sub {
+	width: 100%;
+	padding: 20px;
+	margin: 5px 0;
+	text-align: center;
+	border-radius: 5px;
+	background: #ffe8e3;	
+}
+.profile .sub-selected {
+	width: 100%;
+	padding: 20px;
+	margin: 5px 0;
+	text-align: center;
+	border-radius: 5px;
+	background: #fff;
+	border: 1px solid #777;		
+}
+.profile .sub-selected2 {
+	width: 100%;
+	padding: 20px;
+	margin: 5px 0;
+	text-align: center;
+	border-radius: 5px;
+	background: #fff;
+	border: 1px solid #777;		
+}
+.profile .sub-selected3 {
+	width: 100%;
+	padding: 20px;
+	margin: 5px 0;
+	text-align: center;
+	border-radius: 5px;
+	background: #fff;
+	border: 1px solid #777;		
+}
+.profile .skintype	 {
+	background: #ffe8e3;
+}
+.profile-row {
+	margin-bottom: 10px;
+}
+.subscribe-container {
+	margin-top: 50px;
+}
+.terms .sub {
+	background: #ffe8e3;	
+	border: 1px solid #ccc;
+}

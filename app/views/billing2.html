@@ -1,0 +1,54 @@
+<div class="container" ng-init="getBillingInfo()">
+  <div class="account-container">
+        <h1 class="center">Billing</h1>
+        <div class="row">
+              <a href="/">PureBox</a>
+        </div>                
+        <h3>{{profile.fname}}&nbsp;{{profile.lname}}</h3>
+        <hr />      
+        <div class="row">
+
+        <h4>Billing Info</h4>
+        <div class="address1">
+          <label for="billing_address1">Address 1</label>
+          <input value="{{ billing_address1 }}"type="text" id="billing_address1" ng-model="billing_address1">
+        </div>
+        <div class="address2">
+          <label for="billing_address2">Address 2</label>
+          <input type="text" id="billing_address2" ng-model="billing_address2">
+        </div>
+         <div>
+            <label for="billing_city">City</label>
+            <input type="text" id="billing_city" ng-model="billing_city">
+          </div>                                  
+          <div>
+            <label for="billing_state">State</label>
+            <input type="text" id="billing_state" ng-model="billing_state">
+          </div> 
+          <div>
+            <label for="billing_postal_code">Postal Code</label>
+            <input type="text" id="billing_postal_code" ng-model="billing_postal_code">
+          </div>
+          <div>
+            <label for="billing_phone">Phone</label>
+            <input type="text" id="billing_phone" ng-model="billing_phone">
+          </div>                                                 
+        </div>
+
+
+          <div class="row errorDiv">
+              {{ errMsg }}
+          </div>
+
+          <div class="row center">
+              <br />
+              <a ng-click="updateBillingInfo()" class="btn btn-default btn-lg" style="cursor:pointer">Update Billing</a>
+              &nbsp;&nbsp;&nbsp;&nbsp;
+              <a ng-click="redirect()" class="btn btn-default btn-lg" style="cursor:pointer">Back to Account Page</a>
+          </div>
+
+          <br /><br /><br /><br /><br /><br /><br />
+
+        <div ng-repeat="message in messages" class="alert alert-{{message.type}}">{{message.text}}</div>
+    </div>
+</div>

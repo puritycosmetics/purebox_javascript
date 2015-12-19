@@ -1,0 +1,104 @@
+<div class="container subscribe-container">
+        <div class="row center">
+            <h2>Start by creating your custom profile</h2>
+            Let us know your skin type, skin tone, and subscription term so that we can set up your PureBox.
+            <hr />
+        </div>
+        <div class="row">
+              <a href="/">PureBox</a>
+        </div>             
+        <div class="row">
+            <h3>Select your skin tone</h3>
+            <div class="col-md-3 profile" ng-click="setSkinTone('Alpine')">
+                <div class="sub" ng-class="{ selected:skintone === 'Alpine' }">
+                    Alpine Rose
+                </div>    
+            </div>
+            <div class="col-md-3 profile" ng-click="setSkinTone('Creme')">
+                <div class="sub" ng-class="{ selected:skintone === 'Creme' }">
+                    Creme Porcelain
+                </div>    
+            </div>
+            <div class="col-md-3 profile" ng-click="setSkinTone('White Peach')">
+                <div class="sub" ng-class="{ selected:skintone === 'White Peach' }">
+                    White Peach
+                </div>    
+            </div>
+            <div class="col-md-3 profile" ng-click="setSkinTone('Peach Bisque')">
+                <div class="sub" ng-class="{ selected:skintone === 'Peach Bisque' }">
+                    Peach Bisque
+                </div>    
+            </div>                
+        </div>
+        <div class="row profile-row">
+            <div class="col-md-3 profile" ng-click="setSkinTone('Golden Peach')">
+                <div class="sub" ng-class="{ selected:skintone === 'Golden Peach' }">
+                    Golden Peach
+                </div>    
+            </div>
+            <div class="col-md-3 profile" ng-click="setSkinTone('Toffee')">
+                <div class="sub" ng-class="{ selected:skintone === 'Toffee' }">
+                    Toffee
+                </div>    
+            </div>
+            <div class="col-md-3 profile" ng-click="setSkinTone('Mousse')">
+                <div class="sub" ng-class="{ selected:skintone === 'Mousse' }">
+                    Mouse
+                </div>    
+            </div>
+            <div class="col-md-3 profile" ng-click="setSkinTone('Cocoa')">
+                <div class="sub" ng-class="{ selected:skintone === 'Cocoa' }">
+                    Cocoa
+                </div>      
+            </div>                
+        </div>            
+        <div class="row profile-row">
+            <h3>Select your skin type</h3>
+            <div class="col-md-3 profile" ng-click="setSkinType('Dry')">
+                <div class="sub" ng-class="{ selected:skintype === 'Dry' }">
+                    Dry
+                </div>    
+            </div>
+            <div class="col-md-3 profile" ng-click="setSkinType('Normal')">
+                <div class="sub" ng-class="{ selected:skintype === 'Normal' }">
+                    Normal
+                </div>    
+            </div>
+            <div class="col-md-3 profile" ng-click="setSkinType('Oily')">
+                <div class="sub" ng-class="{ selected:skintype === 'Oily' }">
+                    Oily
+                </div>    
+            </div>
+            <div class="col-md-3 profile" ng-click="setSkinType('Combo')">
+                <div class="sub" ng-class="{ selected:skintype === 'Combo' }">
+                    Combo
+                </div>    
+            </div>
+        </div>
+        <div class="row profile-row" ng-hide="hideDiv">
+            <h3>Select your subscription term</h3>
+            <div class="col-md-4 profile terms" ng-click="setTerms(1)">
+                <div class="sub" ng-class="{ selected2:terms === 1 }">
+                    Month to month
+                </div>    
+            </div>
+            <div class="col-md-4 profile terms" ng-click="setTerms(6)">
+                <div class="sub" ng-class="{ selected2:terms === 6 }">
+                    6 months
+                </div>
+            </div>
+            <div class="col-md-4 profile terms" ng-click="setTerms(12)">
+                <div class="sub" ng-class="{ selected2:terms === 12 }">
+                    12 months
+                </div>
+            </div>                                                
+        </div>
+        <div class="row errorDiv">
+            {{ errMsg }}
+        </div>            
+        <div class="row center">
+            <br />        
+            <a ng-click="validateProfile()" class="btn btn-default btn-lg" style="cursor:pointer">Submit Profile</a>
+            <!--a ng-click="validateProfile()" class="btn btn-default btn-lg">Submit Profile</a-->
+        </div>            
+</div>

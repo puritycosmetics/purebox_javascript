@@ -1,0 +1,512 @@
+/*
+Original Bootstrap's CSS depends on empty href attributes to style cursors 
+for several components (pagination, tabs etc.). But in AngularJS adding empty 
+href attributes to link tags will cause unwanted route changes. This is why we 
+need to remove empty href attributes from directive templates and as a result 
+styling is not applied correctly. The remedy is simple, just add the following 
+styling to your application:
+*/
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+
+#auth {
+  border: none;
+}
+footer{
+	background-color: #404040 !important;
+	text-align: center;
+	min-height: 100px;
+	background-color: #f8f8f8;
+	bottom: 0;
+	min-width: 100%;
+	display: inline;
+	padding: 20px 20px 0px 15px;
+	margin-top: 75px;
+	color:#ffffff;
+}
+footer a{
+	display: inline;
+	padding: 10px 15px 10px 15px;
+    font-size: 17px;
+    color: #d3d3d3;
+}
+footer a:hover{
+	color: #fff;
+	text-decoration: none;
+}
+footer h3 {
+	padding-bottom: 25px;
+	padding-top: 10px;
+	font-family: serif;
+	color: #E8589F;
+}
+footer p{
+	text-align: center;
+	padding-top: 15px;
+	font-size: 14px !important;
+	padding-bottom: 10px;
+	color: #777;
+}
+footer img{
+	height: 50px;
+	padding-top: 10px;
+}
+ul.social li{
+	display: inline;
+	padding-top: 50px;
+	padding-bottom: 10px;
+
+}
+.underline:hover {
+	text-decoration: underline;	
+}
+/*** Skin tone colors ***/
+.alpine-rose {
+    background-color: #fcd2c1;
+}
+.creme-porcelain {
+    background-color: #f2dbc1;
+}
+.white-peach {
+    background-color: #eccaa5;
+}
+.peach-bisque {
+    background-color: #ddbd9d;
+}
+.golden-peach {
+    background-color: #cea780;
+}
+.toffee {
+    background-color: #ad7f54;
+}
+.mousse {
+    background-color: #90613b;
+}
+.cocoa {
+    background-color: #703815;
+}
+
+
+@media screen and (max-width: 740px) { 
+  #auth button {
+    width: 100%;
+  }
+}
+
+.ng-invalid {
+    /* color: red; */
+}
+
+.about-banner{
+	background: url('../images/about-banner.png') no-repeat center;
+	background-size: cover;
+}
+.about-banner .sub{
+	font-size: 62px;
+	float: left;
+	margin: 4.8em 0 0 50px;
+}
+.account-container{
+	font-size: 18px;
+	margin-top: 50px;
+}
+.account-container .sub{
+	margin-bottom: 20px;
+}
+.banner{
+	width: 1200px;
+	height: 600px;
+	margin: 50px auto 50px;	
+}
+.center{
+	text-align: center;
+}
+.container p{
+	font-size: 20px;
+}
+.container-main{
+	height: 1800px;
+	margin: auto;
+}
+.container-main h1{
+	margin-top: 30px;
+	text-align: center;	
+}
+.container-main .sub{
+	font-size: 34px;
+	padding: 45px;
+	text-align: center;
+	margin: 40px auto 60px;
+	border-radius: 5px;
+	width: 30%;
+	float: right;
+}
+.container-main .sub span{
+	font-size: 64px;
+	font-weight: 700;
+}
+.container-top{
+	width: 100%;
+	height: 260px;
+	background: #FFC36C;
+
+}
+.container-top .left{
+	font-size: 48px;
+	float: left;
+	margin: 55px 0 0 80px;
+	text-align: center;
+	width: 230px;
+	letter-spacing: 5px;
+	font-weight: 600;
+	line-height: 60px;
+	border: 0px solid;
+
+}
+.container-top .right{
+	font-size: 26px;
+	line-height: 32px;
+	float: left;
+	width: 610px;
+	margin: 55px 0 0 100px;	
+	border: 0px solid;
+
+}
+.container-top .bottom{
+	text-align: right;
+	font-size: 42px;
+	border: 0px solid;
+
+}
+.container-top .bottom a{
+	color: #ffffff;
+}
+.container-main{
+	background: url('../images/homepage3.png');
+
+}
+.container-main .top{
+	text-align: center;
+	font-size: 48px;
+	padding-top: 50px;
+	letter-spacing: 3px;
+}
+.errorDiv{
+	min-height: 50px;
+	text-align: center;
+	font-size: 22px;
+}
+.faq-banner{
+	background: url('../images/faq-banner.png') no-repeat center;
+	background-size: cover;	
+}
+.faq-banner .sub{
+	font-size: 62px;
+	float: right;
+	margin: 4.8em 100px 0 0;
+}
+
+/****  Carousel ****/
+/* Show arrows on hover */
+.carousel .carousel-control { 
+	visibility: hidden; 
+}
+.carousel:hover .carousel-control { 
+	visibility: visible; 
+}
+.carousel-inner>.item>img{
+	max-width: none !important;
+}
+.carousel-wrapper{
+	width: 50%;
+    z-index: 999;
+    position: absolute;
+    top: 20%;
+    font-size: 22px;
+    padding: 20px 30px;
+    background: rgba(0,0,0,.3);
+    color: #fff;
+    letter-spacing: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 10%;
+}
+.carousel-wrapper .top {
+	color: #5b5557;
+	padding-bottom: 10px;
+}
+.carousel-wrapper .header {
+	color: #f16666;
+	font-size: 42px;
+	padding-bottom: 10px;	
+
+}
+.carousel-wrapper .content {
+	color: #000;
+}
+.home-carousel{
+	margin-top: 50px;
+}
+
+/*******************/
+
+.logo-link{
+	float: left;
+	height: 50px;
+	margin: 0;
+	padding: 0;
+}
+.loginTrouble{
+	line-height: 10px;
+	color: #198fff;
+    outline: none;
+    margin-top: 45px;
+    font-size: 14px !important;
+    padding-top: 50px;
+}
+.input{
+	box-shadow: none;
+}
+.login-container{
+	border-radius: 10px;
+	margin: 50px auto 0;
+	border: 1px solid #ccc;
+    min-height: 500px; 
+    min-width: 350px;
+    width: 300px;
+    text-align: center;
+    line-height: 20px;
+	padding: 0 25px 0;
+    box-shadow: 10px 5px 5px black;
+    -webkit-box-shadow: 3px 3px 10px 0px rgba(92,92,94,0.7);
+	-moz-box-shadow: 3px 3px 10px 0px rgba(92,92,94,0.7);
+	box-shadow: 3px 3px 10px 0px rgba(92,92,94,0.7);
+}
+.login-container input {
+	width: 100%;
+}
+.login-container label{
+	font-weight: 500;
+}
+.login-container p{
+	font-size: 18px;
+}
+body{
+	background-image: 'http://7-themes.com/data_images/out/75/7028586-horses.jpg';
+}
+fieldset{
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 45px;
+}
+.login-form{
+    padding: 25px;
+    font-size: 1em;
+    position: relative6
+}
+.name{
+	text-transform: capitalize;
+}
+.navbar{
+	position: fixed;
+	top: 0;
+	z-index: 999;
+	width: 100%;
+}
+.navbar-nav>li>a {
+    padding-bottom: 25px !important;
+    padding-top: 25px !important;
+}
+/****** How it Works page ******/
+.how-it-works-banner{
+	background: url('../images/faq-banner.png') no-repeat center;
+	background-size: cover;	
+}
+.plan-cost{
+	font-size: 36px;
+	text-align: center;
+	margin-bottom: 5px;
+}
+.plan-title{
+	font-size: 24px;
+	text-align: center;
+	margin-bottom: 10px;
+}
+.login-input{
+	border: none;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 10px;
+	line-height: 2em;
+	font-size: 14px;
+
+
+}
+/******************************/
+
+
+/**************** RESPONSIVE ******************/
+
+@media screen and (max-width: 1200px) {
+	.carousel-wrapper {
+		top: 40px;
+		left: 140px;
+		font-size: 20px;
+		padding: 20px 35px;
+	}	
+	.container-top .left{
+		margin: 55px 20px 0 35px;
+	}	
+	.container-top .right{
+		margin-left: 0;
+	}
+
+}
+@media screen and (max-width: 992px) {
+	.carousel-wrapper {
+		top: 40px;
+		left: 104px;
+		font-size: 20px;
+		padding: 20px 35px;
+	}
+	.carousel-wrapper .top {
+		padding: 0;
+	}	
+	.carousel-wrapper .header{
+		padding: 0;
+	}
+	.container{
+		width: inherit;
+	}
+  	.container-main .sub{
+	  	font-size: 34px;
+	  	padding: 45px;
+	  	text-align: center;
+	  	background-color: rgba(204,204,204,.5);
+	  	margin: 60px auto;
+	  	border-radius: 5px;
+	  	width: 50%;
+	  	float: none;
+	}
+	.container-main .sub span{
+	  	font-size: 64px;
+		font-weight: 700;
+	 }	
+	.container-main .top{
+		font-size: 42px;
+
+	}
+	.container-top .left{
+		margin: 15px 0 0 0;
+		width: 100%;
+	}
+	.container-top .right{
+		margin: 0;
+		padding: 10px;
+		font-size: 24px;
+		width: 100%;
+	}	
+	.container-top .bottom{
+		margin-top: 20px;
+		text-align: center;
+	}	
+
+}
+@media screen and (max-width: 800px) {
+  	.container-main .sub{
+	  	font-size: 34px;
+	  	padding: 45px;
+	  	text-align: center;
+	  	background-color: rgba(204,204,204,.5);
+	  	margin: 40px auto 60px;
+	  	border-radius: 5px;
+	  	width: 50%;
+	}
+	.container-main .sub span{
+	  	font-size: 64px;
+		font-weight: 700;
+	 }
+}
+@media screen and (max-width: 768px) {
+	.carousel-wrapper {
+		top: 40px;
+		left: 88px;
+		font-size: 20px;
+		padding: 20px 35px;
+	}
+	.container-main{
+		padding-top: 30px;
+		height: 1100px;
+	}	
+	.container-main .top {
+	    font-size: 42px;
+	    letter-spacing: 3px;
+	    text-align: center;
+	    width: 92%;
+	    margin: auto;
+	    padding: 0;
+	    border-radius: 5px;
+	}
+}	
+@media screen and (max-width: 700px) { 
+  #auth button {
+    width: 100%;
+  }
+  .container-top{
+  	height: 285px;
+  }
+  .container-top .bottom{
+
+  }
+}
+@media screen and (max-width: 575px) { 
+  .container-top{
+  	height: 320px;
+  }
+}
+@media screen and (max-width: 470px) { 
+  .container-top{
+  	height: 410px;
+  }
+}
+@media screen and (max-width: 414px) { 
+  .container-main{
+  	padding-top: 35px;
+  	height: 1000px;
+  }
+  .container-main .sub{
+  	font-size: 28px;
+  	padding: 20px 5px;
+  	text-align: center;
+  	background-color: rgba(204,204,204,.5);
+  	margin: 50px auto;
+  	border-radius: 5px;
+  	width: 75%;
+  } 
+  .container-main .top{
+	font-size: 40px;
+	width: 91%;
+  }
+  .container-top{
+  	height: 445px;
+  }
+}
+@media screen and (max-width: 400px) { 
+  .container-top{
+  	height: 445px;
+  }
+}
+@media screen and (max-width: 360px) { 
+  .container-main .top{
+  	font-size: 34px;
+  	width: 92%;
+  }
+  .container-top{
+  	height: 445px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .container-main .sub{
+  	font-size: 26px;
+  }	
+  .container-top{
+  	height: 475px;
+  }
+}

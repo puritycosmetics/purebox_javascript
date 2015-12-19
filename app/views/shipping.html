@@ -1,0 +1,65 @@
+<div>
+  <div class='row center'>    
+    <h2><a href="/">PureBox</a></h2>
+    <hr />    
+    <div class="col-md-12" class="sign-up-container">
+    <div class="row center">
+          <strong>Subscription length:</strong><br />
+          {{ terms }}<br />
+          <strong>Total:</strong><br />
+          ${{ total }}<br />
+    </div>    
+    <div class="col-md-12" class="sign-up-container">     
+        <form name="signUpForm" id="signUpForm" role="form" ng-submit="setShippingInfo()">
+            <div class="row">
+              <h4>Shipping</h4>
+              <label for="fname_shipping">First Name</label><br />
+              <input id="fname_shipping" class="form-control" autofocus="autofocus" required name="fname_shipping" type="text" ng-model="fname_shipping" />
+            </div>
+            <div class="row">
+              <label for="lname_shipping">Last Name</label><br />
+              <input id="lname_shipping" class="form-control" required name="lname_shipping" type="text" ng-model="lname_shipping" />
+            </div>
+
+            <div class="address1_shipping">
+              <label for="address1_shipping">Address 1*</label><br />
+              <input type="text" required data-recurly="address1" id="address1_shipping" ng-model="address1_shipping">
+            </div>
+
+            <div class="address2_shipping">
+              <label for="address2_shipping">Address 2</label><br />
+              <input type="text" data-recurly="address2" id="address2_shipping" ng-model="address2_shipping">
+            </div>
+
+            <div>
+              <label for="city_shipping">City*</label><br />
+              <input type="text" required data-recurly="city" id="city_shipping" ng-model="city_shipping">
+            </div>
+
+            <div>
+              <label for="state_shipping">State*</label><br />
+              <input type="text" required data-recurly="state" id="state_shipping" ng-model="state_shipping">
+            </div>
+
+            <div>
+              <label for="postal_code_shipping">Postal Code*</label><br />
+              <input type="text" required data-recurly="postal_code" id="postal_code_shipping" ng-model="postal_code_shipping">
+            </div>              
+
+            <div>
+              Same Billing Address <input type="checkbox" ng-init="billing=false" ng-model="billing" name="billing" ng-true-value="true" ng-false-value="false">
+            </div>  
+            <p ng-show="err" class="error">{{ err.code }}</p><br />      
+
+            <button class="btn btn-default btn-lg">Continue</button>
+
+            <div class="row" ng-init="shipping=true">
+                  <br />     
+                  *Required fields                        
+                  <br /><br /><br /><br /><br /><br /><br /><br /><br />
+            </div>
+
+        </form>
+    </div>       
+  </div>
+</div>

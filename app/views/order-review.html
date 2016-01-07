@@ -1,0 +1,79 @@
+<div>
+  <div class='row center'>
+    <h2>Billing</h2>
+    <hr />
+    <div class="row">
+          <a href="/">PureBox</a>
+    </div>     
+    <div class="col-md-12" class="sign-up-container" ng-controller="OrderReviewCtrl">
+        <form name="signUpForm" id="signUpForm" role="form" ng-submit="signUp(email, pass, confirm)">
+            <div class="row">
+              <label for="loginFname">First Name</label><br />
+              <input id="loginFname" class="form-control" required name="fname" type="text" ng-model="fname" />
+            </div>
+            <div class="row">
+              <label for="loginLname">Last Name</label><br />
+              <input id="loginLname" class="form-control" required name="lname" type="text" ng-model="lname" />
+            </div>
+
+            <div class="address1">
+              <label for="address1">Address 1*</label><br />
+              <input type="text" required data-recurly="address1" id="address1" ng-model="address1">
+            </div>
+
+            <div class="address2">
+              <label for="address2">Address 2</label><br />
+              <input type="text" data-recurly="address2" id="address2" ng-model="address2">
+            </div>
+
+            <div>
+              <label for="city">City*</label><br />
+              <input type="text" required data-recurly="city" id="city" ng-model="city">
+            </div>
+
+            <div>
+              <label for="state">State*</label><br />
+              <input type="text" required data-recurly="state" id="state" ng-model="state">
+            </div>
+
+            <div>
+              <label for="postal_code">Postal Code*</label><br />
+              <input type="text" required data-recurly="postal_code" id="postal_code" ng-model="postal_code">
+            </div>
+
+            <div>
+              <label for="phone">Phone</label><br />
+              <input type="text" required data-recurly="phone" id="phone" ng-model="phone">
+            </div>               
+
+            <div class="row">
+              <label for="loginEmail">Email</label><br />
+              <input id="loginEmail" class="form-control" required name="email" type="email" ng-model="email" />
+            </div>           
+            <div class="row">
+              <label for="loginPass">Password</label><br />
+              <input id="loginPass" class="form-control" required name="pass" type="password" ng-model="pass" />
+            </div>
+            <div class="row">
+              <label for="loginConfirm">Confirm Password</label><br />
+              <input id="loginConfirm" class="form-control" required name="confirm" type="password" ng-model="confirm" />
+            </div>
+            <!-- <p>
+              <a href="{{ url }}{{leaddyno.visit.id}}" class="btn btn-default btn-lg" ng-click="signUp(email, pass, confirm)">Sign up</a>
+            </p> -->
+            <p ng-show="err" class="error">{{ err.code }}</p><br />      
+            <button class="btn btn-default btn-lg">Continue</button>
+            <div class="row" ng-init="shipping=true">
+                  <br />     
+                  *Required fields                        
+                  <br />
+                  <input type="radio" ng-model="shipping" ng-value="true" name="shipping" title="Ship to the same address">
+                  <label for="shipping">Ship to the same address</label><br />
+                  <input type="radio"ng-model="shipping" ng-value="false" name="shipping" title="Ship to a different address">
+                  <label for="shipping">Ship to a different address</label><br />
+                  <br /><br /><br /><br /><br /><br /><br /><br /><br />
+            </div>
+        </form>
+    </div>       
+  </div>
+</div>

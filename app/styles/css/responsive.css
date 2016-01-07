@@ -1,0 +1,37 @@
+/*------------------------------------------------------------------
+[Stylesheet]
+Responsiveness Fixes
+-------------------------------------------------------------------*/
+
+@media (max-width: 479px) {
+	.home_content {text-align:center !important; padding-top:2rem;}
+	.top_bar {margin-bottom:0;}		
+	.list-icons i {top:-0.1rem;}
+	.video_headline h3, .video_headline a {display:block;}
+	.video_headline a {margin:0 auto;}
+	#testimonials {text-align: center!important}
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+    .home_fullscreen {opacity:1 !important }
+	.home_content {text-align:center !important;}
+	.top_bar {margin-bottom:0;}
+	.list-icons i {top:-0.1rem;}
+	.video_headline h3, .video_headline a {display:block;}
+	.video_headline a {margin:0 auto;}
+	#testimonials {text-align: center!important}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.list-icons i {top:-0.1rem;}
+	.home_fullscreen {opacity:1 !important }
+	.home_content {text-align:center !important;}
+	.top_bar {margin-bottom:0;}
+	#testimonials {text-align: center!important}
+	
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+	.list-icons i {top:-0.1rem;}
+}
+@media (min-width: 1200px) {
+	
+}

@@ -1,0 +1,45 @@
+<div class="container">
+  <div class="login-container">
+    <div class='row'>  
+      <h3><a href="/">PureBox</a></h3>
+      <br />
+      <div class="col-md-12">        
+          <form role="form">
+              <p>
+                <label for="loginEmail">Email</label><br />
+                <input id="loginEmail" required name="email" type="email" ng-model="email" placeholder-="Email" />
+              </p>
+              <p>
+                <label for="loginPass">Password</label><br />
+                <input id="loginPass" required name="pass" type="password" ng-model="pass" />
+              </p>
+              <p ng-cloak ng-show="createMode">
+                <label for="loginConfirm">confirm pass</label>
+                <input id="loginConfirm" required name="confirm" type="password" ng-model="confirm" />
+              </p>
+              <br />
+              <p>
+                <button class="btn btn-primary btn-lg btn-block" ng-click="passwordLogin(email, pass)" ng-hide="createMode">Log In</button>
+                <button  ng-cloak ng-show="createMode"ng-click="createAccount(email, pass, confirm)">Create Account</button>
+                <button ng-cloak ng-show="createMode" ng-click="createMode = false">Cancel</button>
+              </p>
+              <p ng-show="err" class="error">{{err.code}}</p>
+          </form>
+      </div>    
+      <div class="col-md-12">
+        <fieldset>
+          <p>
+            <br />
+            <img src="../images/fb-button.png" width="300"  ng-click="oauthLogin('facebook')"><br />
+            <!--a ng-click="createMode = true" ng-hide="createMode">Sign up for a new account</a--><br />
+            <a href="/subscribe.html#/">Subscribe to Pure Box</a>
+            <!--button  ng-click="oauthLogin('google')">Sign in with Google</button><br />
+            <button  ng-click="oauthLogin('twitter')">Sign in Twitter</button-->
+          </p>
+        </fieldset>
+      </div>    
+    </div>
+   </div>
+   <br /><br /><br /><br /><br /><br />
+</div>
+

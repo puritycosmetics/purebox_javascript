@@ -1,0 +1,90 @@
+<!doctype html>
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <title>Pure Box</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+ 
+
+
+
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/app.css">    
+    <!-- endbuild -->
+
+
+    <!-- Material Design Lite -->  
+    <link rel="stylesheet" href="styles/css/material.indigo-red.min.css">
+    <script src="//storage.googleapis.com/code.getmdl.io/1.0.2/material.min.js"></script>
+    <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons"> 
+    
+    <!-- Google Fonts -->
+    <link href='//fonts.googleapis.com/css?family=Roboto+Slab:300' rel='stylesheet' type='text/css'>
+        
+    <!-- CSS Files comes here -->
+    <link href="styles/css/grid12.css" rel="stylesheet" media="screen">                                 <!-- Grid System -->
+    <link href="styles/css/james_typography.css" rel="stylesheet" media="screen">                       <!-- Typography -->
+    <link href="styles/css/main.css" rel="stylesheet" media="screen">                                   <!-- Main CSS file -->
+    <link href="styles/css/color_scheme_light.css" rel="stylesheet" media="screen">                     <!-- Color_scheme -->
+    <link href="styles/css/responsive.css" rel="stylesheet" media="screen">                             <!-- Responsive Fixes -->
+    <link href="styles/css/animate.css" rel="stylesheet" media="screen">                                <!-- Animate - animations -->
+    <link href="styles/css/nivo-lightbox.css" rel="stylesheet" media="screen">                          <!-- Lightbox Styles -->
+    <link href="styles/css/nivo_lightbox_themes/default/default.css" rel="stylesheet" media="screen">   <!-- Lightbox Styles -->
+    <link href="styles/css/owl.carousel.css" rel="stylesheet" media="screen">                           <!-- Owl - Carousel -->
+    <link href="styles/css/owl.theme.css" rel="stylesheet" media="screen">                              <!-- Owl - Carousel -->
+    <link href="styles/css/subscribe.css" rel="stylesheet" media="screen">
+
+    <!-- Modernizer and IE specyfic files -->  
+    <script src="scripts/js/modernizr.custom.js"></script>
+
+    <!-- Firebase -->
+    <script src="https://cdn.firebase.com/js/client/2.3.2/firebase.js"></script>
+
+</head>
+
+<body>
+<div class="sign-up-container">
+  <div class='row center'>  
+    <h2>Enter your information</h2>
+    <hr />
+    <div class="col-md-12">
+        <form role="form">
+            <div class="row">
+              <label for="loginFname">First Name</label><br />
+              <input id="loginFname" class="form-control" autofocus="autofocus" required name="fname" type="text"/>
+            </div>
+            <div class="row">
+              <label for="loginLname">Last Name</label><br />
+              <input id="loginLname" class="form-control" required name="lname" type="text"/>
+            </div>
+            <div class="row">
+              <label for="loginEmail">Email</label><br />
+              <input id="loginEmail" class="form-control" required name="email" type="email"/>
+            </div>
+            <div class="row">
+              <label for="loginPass">Password</label><br />
+              <input id="loginPass" class="form-control" required name="pass" type="password"/>
+            </div>
+            <div class="row">
+              <label for="loginConfirm">Confirm password</label><br />
+              <input id="loginConfirm" class="form-control" required name="confirm" type="password"/>
+            </div>
+            <!-- <p>
+              <a href="{{ url }}{{leaddyno.visit.id}}" class="btn btn-default btn-lg" ng-click="signUp(email, pass, confirm)">Sign up</a>
+            </p> -->
+            <br /><br />
+            <button class="btn btn-default btn-lg" onClick="profile.signUp();return false">Proceed to Checkout</button>
+            <p id="error"></p>
+        </form>
+    </div>   
+  </div>
+</div>
+
+<script src="scripts/js/subscribe.js"></script>
+</body>
+
+</html>

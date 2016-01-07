@@ -1,0 +1,77 @@
+<div class="checkout-container">
+  <div class='row center'>  
+    <h2>Billing information</h2>
+    <hr />
+    <div class="col-md-12">
+        <form recurly-form="CALLBACK" role="form" ng-init="setFormScope(this)" ng-submit="checkout()">
+          4111111111111111<br />
+            <div>
+              <label for="number">Card Number*</label>
+              <input type="text" required data-recurly="number" id="number" ng-model="number">
+            </div>
+
+            <div class="date">
+              <label for="month">Month*</label>
+              <input type="text" required data-recurly="month" id="month" maxlength="2" ng-model="month">
+            </div>
+
+            <div class="date">
+              <label for="year">Year*</label>
+              <input type="text" required data-recurly="year" id="year" maxlength="4" ng-model="year">
+            </div>
+
+            <div class="number">
+              <label for="cvv">CVV*</label>
+              <input type="text" required data-recurly="cvv" id="cvv" maxlength="3" ng-model="cvv">
+            </div>
+
+            <div>
+              <label for="first_name">First Name*</label>
+              <input type="text" required data-recurly="first_name" id="first_name" ng-model="fname">
+            </div>
+
+            <div>
+              <label for="last_name">Last Name*</label>
+              <input type="text" required data-recurly="last_name" id="last_name" ng-model="lname">
+            </div>
+
+            <div class="address1">
+              <label for="address1">Address*</label>
+              <input type="text" required data-recurly="address1" id="address1" ng-model="address1">
+            </div>
+
+            <div>
+              <label for="city">City*</label>
+              <input type="text" required data-recurly="city" id="city" ng-model="city">
+            </div>
+
+            <div>
+              <label for="state">State*</label>
+              <input type="text" required data-recurly="state" id="state" ng-model="state">
+            </div>
+
+            <div>
+              <label for="postal_code">Postal Code*</label>
+              <input type="text" required data-recurly="postal_code" id="postal_code" ng-model="postal_code">
+            </div>
+
+            <div>
+              <label for="phone">Phone</label>
+              <input type="text" required data-recurly="phone" id="phone" ng-model="phone">
+            </div>               
+            <br />     
+            *Required fields
+            <br />      
+            <input type="hidden" data-recurly="token" name="recurly-token" id="token" ng-model="token">
+                       
+            <br />
+
+            <button class="btn btn-default btn-lg">Submit</button>
+            <p ng-show="err" class="error" ng-bind-html="trustedHtml">{{err}}</p>
+
+            <br /><br /><br /><br /><br /><br /><br /><br />
+
+        </form>
+    </div>   
+  </div>
+</div>

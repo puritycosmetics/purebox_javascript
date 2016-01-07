@@ -1,0 +1,86 @@
+<div class="container subscribe-container">
+        <h2 class="center"><a href="/">PureBox</a></h2>
+        <hr /> 
+        <div class="row center">
+            <h4>Start by creating your custom profile</h4>
+        </div>            
+        <div class="row">
+            <h3>Select your skin tone</h3>
+            <div class="col-md-3 profile" ng-click="setSkinTone('Alpine')">
+                <div class="sub" ng-class="{ selected:skintone === 'Alpine' }">
+                    Alpine Rose
+                </div>    
+            </div>
+            <div class="col-md-3 profile" ng-click="setSkinTone('Creme')">
+                <div class="sub" ng-class="{ selected:skintone === 'Creme' }">
+                    Creme Porcelain
+                </div>    
+            </div>
+            <div class="col-md-3 profile" ng-click="setSkinTone('White Peach')">
+                <div class="sub" ng-class="{ selected:skintone === 'White Peach' }">
+                    White Peach 
+                </div>    
+            </div>
+            <div class="col-md-3 profile" ng-click="setSkinTone('Peach Bisque')">
+                <div class="sub" ng-class="{ selected:skintone === 'Peach Bisque' }">
+                    Peach Bisque
+                </div>    
+            </div>                
+        </div>
+        <div class="row profile-row">
+            <div class="col-md-3 profile" ng-click="setSkinTone('Golden Peach')">
+                <div class="sub" ng-class="{ selected:skintone === 'Golden Peach' }">
+                    Golden Peach
+                </div>    
+            </div>
+            <div class="col-md-3 profile" ng-click="setSkinTone('Toffee')">
+                <div class="sub" ng-class="{ selected:skintone === 'Toffee' }">
+                    Toffee
+                </div>    
+            </div>
+            <div class="col-md-3 profile" ng-click="setSkinTone('Mousse')">
+                <div class="sub" ng-class="{ selected:skintone === 'Mousse' }">
+                    Mouse
+                </div>    
+            </div>
+            <div class="col-md-3 profile" ng-click="setSkinTone('Cocoa')">
+                <div class="sub" ng-class="{ selected:skintone === 'Cocoa' }">
+                    Cocoa
+                </div>      
+            </div>                
+        </div>            
+        <div class="row profile-row">
+            <h3>Select your skin type</h3>
+            <div class="col-md-3 profile" ng-click="setSkinType('Dry')">
+                <div class="sub" ng-class="{ selected:skintype === 'Dry' }">
+                    Dry
+                </div>    
+            </div>
+            <div class="col-md-3 profile" ng-click="setSkinType('Normal')">
+                <div class="sub" ng-class="{ selected:skintype === 'Normal' }">
+                    Normal
+                </div>    
+            </div>
+            <div class="col-md-3 profile" ng-click="setSkinType('Oily')">
+                <div class="sub" ng-class="{ selected:skintype === 'Oily' }">
+                    Oily
+                </div>    
+            </div>
+            <div class="col-md-3 profile" ng-click="setSkinType('Combo')">
+                <div class="sub" ng-class="{ selected:skintype === 'Combo' }">
+                    Combo
+                </div>    
+            </div>
+        </div>
+        <div class="row errorDiv">
+            {{ errMsg }}
+        </div>            
+        <div class="row center">
+            <br />
+            <button ng-click="updateProfile()" class="btn btn-default btn-lg" style="cursor:pointer">Update Profile</button>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <button ng-click="redirect()" class="btn btn-default btn-lg" style="cursor:pointer">Back to Account Page</button>            
+            <!--a ng-click="validateProfile()" class="btn btn-default btn-lg">Submit Profile</a-->
+        </div>
+        <br /><br />  
+</div>

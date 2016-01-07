@@ -1,0 +1,47 @@
+<div class="checkout-container container" ng-init="getCustomerInfo()">
+  <div class='row center col-md-12'>
+      <h2><a href="/">PureBox</a></h2>
+      <hr />
+      <h4>Thank you for your order!</h4>
+      <h5>You will receive an email shortly with your order details.</h5>
+  </div>
+  <div class="row col-md-12" style="font-size:18px;">
+      <h5>Order Details</h5>
+      <div class="col-md-2">
+        Invoice:
+      </div>
+      <div class="col-md-10">
+        {{ invoice }}
+      </div>    
+      <div class="col-md-2">
+        Start date:
+      </div>
+      <div class="col-md-10">
+        {{ start_date }}
+      </div>
+      <div class="col-md-2">
+        End date:
+      </div>
+      <div class="col-md-10">
+        {{ end_date }}
+      </div>
+      <div class="col-md-2">
+        Plan:
+      </div>
+      <div class="sub col-md-10">
+        {{ plan }} (${{ total_amount }})
+      </div>     
+  </div>
+  <div class="row col-md-12">
+    <h5>Have any questions?</h5>
+    Please call at 877-584-PURE or email <a href="mailto:support@100percentpure.com">support@100percentpure.com</a> and please let us know so that we can help you.
+    <br />
+    <h5>Any changes to your account?</h5>
+    Please call or email us with any changes regarding your subscription terms and we will be glad to help  you.
+    <br /><br />
+    <a ng-click="redirectAcct()" style="cursor:pointer"><strong>Go to Account page ></strong></a>
+
+      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+  </div>
+</div>

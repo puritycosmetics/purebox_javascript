@@ -1,0 +1,61 @@
+<div ng-controller="MainCtrl" ng-cloak>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="home-carousel">
+              <carousel interval="myInterval" no-wrap="noWrapSlides">
+                <div class="carousel-wrapper">
+                    <h1>PUREBOX<br></h1>
+                        <p class="lead">
+                            A curated selection of the world’s purest, most innovative beauty products in long-lasting power-pack sizes.
+                        </p>
+                        <p class="lead">
+                            Revolutionize your beauty with pure, powerful beauty products in power-pack sizes.
+                        </p>                        
+                    <div class="btn btn-lg btn-primary subscribe" ng-show="!isValid">
+                        SUBSCRIBE
+                    </div>
+                </div>                
+                <slide ng-repeat="slide in slides" active="slide.active">
+                  <img ng-src="{{slide.src}}" style="margin:auto;width:100%;min-width:1200px;max-width:1920px">
+                </slide>
+              </carousel>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="container-top">
+                <div class="left">
+                    PURE GIFTING
+                </div>
+                <div class="right">
+                    Surprise a friend with a Pure Box, and we'll deliver it right to their doorstep. You can create a profile for them so their gift box is customized to their specific hair and skin type.
+                </div>
+            </div>
+            <div class="container-main">
+                <div class="top">
+                    WHY PURE BOX IS UNIQUE?
+                </div>
+                <div class="sub">
+                    <span>1</span>
+                    <br /> Made from food grade ingredients
+                </div>
+                <div style="clear:both"></div>
+                <div class="sub">
+                    <span>2</span>
+                    <br/> Performance driven products
+                </div>
+                <div style="clear:both"></div>
+                <div class="sub">
+                    <span>3</span>
+                    <br/> Our Integrity
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>

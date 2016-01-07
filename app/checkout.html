@@ -1,0 +1,372 @@
+<!doctype html>
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <title>Pure Box</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+ 
+
+
+
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/app.css">    
+    <!-- endbuild -->
+
+
+    <!-- Material Design Lite -->  
+    <link rel="stylesheet" href="styles/css/material.indigo-red.min.css">
+    <script src="//storage.googleapis.com/code.getmdl.io/1.0.2/material.min.js"></script>
+    <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons"> 
+    
+    <!-- Google Fonts -->
+    <link href='//fonts.googleapis.com/css?family=Roboto+Slab:300' rel='stylesheet' type='text/css'>
+        
+    <!-- CSS Files comes here -->
+    <link href="styles/css/grid12.css" rel="stylesheet" media="screen">                                 <!-- Grid System -->
+    <link href="styles/css/james_typography.css" rel="stylesheet" media="screen">                       <!-- Typography -->
+    <link href="styles/css/main.css" rel="stylesheet" media="screen">                                   <!-- Main CSS file -->
+    <link href="styles/css/color_scheme_light.css" rel="stylesheet" media="screen">                     <!-- Color_scheme -->
+    <link href="styles/css/responsive.css" rel="stylesheet" media="screen">                             <!-- Responsive Fixes -->
+    <link href="styles/css/animate.css" rel="stylesheet" media="screen">                                <!-- Animate - animations -->
+    <link href="styles/css/nivo-lightbox.css" rel="stylesheet" media="screen">                          <!-- Lightbox Styles -->
+    <link href="styles/css/nivo_lightbox_themes/default/default.css" rel="stylesheet" media="screen">   <!-- Lightbox Styles -->
+    <link href="styles/css/owl.carousel.css" rel="stylesheet" media="screen">                           <!-- Owl - Carousel -->
+    <link href="styles/css/owl.theme.css" rel="stylesheet" media="screen">                              <!-- Owl - Carousel -->
+    <link href="styles/css/subscribe.css" rel="stylesheet" media="screen">
+
+    <!-- Modernizer and IE specyfic files -->  
+    <script src="scripts/js/modernizr.custom.js"></script>
+
+    <!-- LeadDyno -->
+    <script src="https://static.leaddyno.com/js"></script>
+
+</head>
+
+<body>
+        <!-- Menu bar -->
+    <header id="menu_bar" class="menu_bar" data-animate-down="menu_bar-show">
+    
+        <div class="container mdl-color-text--color-1">
+            
+            <a href="/#/" class="go_to_home logo">PureBox</a>
+            
+            <nav class="navigation_desktop visible-lg visible-md visible-sm navigation_js">             
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#FAQ">FAQ</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#testimonials">Reviews</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent">Subscribe</button></li>
+                    <li><div class="menu_button">
+                            <button id="menu-lower-right2" class="mdl-button mdl-js-button mdl-button--icon">
+                            <i class="material-icons mdl-color-text--color-2">more_vert</i></button>
+                            <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="menu-lower-right2">
+                                <li class="mdl-menu__item"><a href="" class="mdl-menu_a">Customer Login</a></li>
+                                <li class="mdl-menu__item"><a href="" class="mdl-menu_a">Affiliates Login</a></li>
+                            </ul>
+                        </div>
+                    </li>       
+                </ul>   
+            </nav>
+            <nav class="navigation_desktop hidden-lg hidden-md hidden-sm mobile_open_button">
+                <ul><li><button class="mdl-button mdl-js-button mdl-button--icon" id="showRight_2"><i class="material-icons">&#xE5D2;</i></button></li></ul>
+            </nav>
+        </div>
+        
+    </header>
+    <!-- // Menu bar -->
+
+<div class="checkout-container">
+  <div class='row center'>  
+    <h2>Billing information</h2>
+    <hr />
+    <div class="col-md-12">
+        <form recurly-form="CALLBACK" role="form" ng-submit="checkout()">
+          4111111111111111<br />
+            <div>
+              <label for="number">Card Number*</label>
+              <input type="text" required data-recurly="number" id="number">
+            </div>
+
+            <div class="date">
+              <label for="month">Month*</label>
+              <input type="text" required data-recurly="month" id="month" maxlength="2">
+            </div>
+
+            <div class="date">
+              <label for="year">Year*</label>
+              <input type="text" required data-recurly="year" id="year" maxlength="4">
+            </div>
+
+            <div class="number">
+              <label for="cvv">CVV*</label>
+              <input type="text" required data-recurly="cvv" id="cvv" maxlength="3">
+            </div>
+
+            <div>
+              <label for="first_name">First Name*</label>
+              <input type="text" required data-recurly="first_name" id="first_name">
+            </div>
+
+            <div>
+              <label for="last_name">Last Name*</label>
+              <input type="text" required data-recurly="last_name" id="last_name">
+            </div>
+
+            <div class="address1">
+              <label for="address1">Address*</label>
+              <input type="text" required data-recurly="address1" id="address1">
+            </div>
+
+            <div>
+              <label for="city">City*</label>
+              <input type="text" required data-recurly="city" id="city">
+            </div>
+
+            <div>
+              <label for="state">State*</label>
+              <input type="text" required data-recurly="state" id="state">
+            </div>
+
+            <div>
+              <label for="postal_code">Postal Code*</label>
+              <input type="text" required data-recurly="postal_code" id="postal_code">
+            </div>
+
+            <div>
+              <label for="phone">Phone</label>
+              <input type="text" required data-recurly="phone" id="phone">
+            </div>               
+            <br />     
+            *Required fields
+            <br />      
+            <input type="hidden" data-recurly="token" name="recurly-token" id="token">
+                       
+            <br />
+
+            <button class="btn btn-default btn-lg" onclick="checkout();return false;">Checkout</button>
+            <p class="error"></p>
+
+            <br /><br /><br /><br /><br /><br /><br /><br />
+
+        </form>
+    </div>   
+  </div>
+</div>
+
+    <br />
+    <a onclick="checkout()">Checkout</a><br />          
+    
+    <!-- Footer #################### -->
+    <section id="footer" class="mdl-color--primary mdl-color-text--color-2" style="position:relative; z-index:100;">
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 align-center">
+                    <p>Made with <i class="material-icons mdl-color-text--accent">&#xE87D;</i> by <a href="http://www.100percentpure.com" class="mdl-color-text--color-2"><strong>100% Pure&copy;</strong></a></p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- //Footer -->
+
+
+
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID
+    <script>
+    ! function (A, n, g, u, l, a, r) {
+        A.GoogleAnalyticsObject = l, A[l] = A[l] || function () {
+                (A[l].q = A[l].q || []).push(arguments)
+            }, A[l].l = +new Date, a = n.createElement(g),
+            r = n.getElementsByTagName(g)[0], a.src = u, r.parentNode.insertBefore(a, r)
+    }(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-XXXXX-X');
+    ga('send', 'pageview');
+    </script>
+
+    <!-- build:js(.) scripts/vendor.js -->
+
+    <!-- endbuild -->
+
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <script src='scripts/leaddyno.js'></script>
+    <script src="https://js.recurly.com/v3/recurly.js"></script>
+    <!-- endbuild -->
+
+
+
+
+    <!-- JavaScript plugins comes here -->  
+    <script src="scripts/js/jquery-2.1.3.min.js"></script>        <!-- jQuery -->
+    <script src="scripts/js/jquery.easing.min.js"></script>       <!-- jQuery easing -->    
+    <script src="scripts/js/jquery.scrollTo.js"></script>         <!-- Scroll to -->
+    <script src="scripts/js/jquery.cycle.all.min.js"></script>    <!-- jQuery cycle -->
+    <script src="scripts/js/jquery.form.js"></script>             <!-- jQuery form -->
+    <script src="scripts/js/classie.js"></script>                 <!-- Class helper function -->
+    <script src="scripts/js/waypoints.min.js"></script>           <!-- Waypoints -->
+    <script src="scripts/js/nivo-lightbox.min.js"></script>       <!-- Lightbox/Modalbox -->
+    <script src="scripts/js/jquery.fitvids.js"></script>          <!-- Responsive Video -->
+    <script src="scripts/js/owl.carousel.js"></script>            <!-- Owl Carousel -->
+    <script src="scripts/js/fastclick.js"></script>               <!-- FastClick -->  
+    <script src="scripts/js/main.js"></script>                    <!-- Main Js file -->
+    <script src="scripts/js/subscribe.js"></script>               <!-- Subscribe Js file -->
+
+    <script>
+
+        function checkout(){
+
+            // Configure recurly.js
+            var x = recurly.configure('sjc-17qcx07uRgUUxXLBx4HIAw');
+
+            // //Checkout form passed to recurly.token
+            // var billingInfo = {
+            //     number: $scope.number,
+            //     month: $scope.month,
+            //     year: $scope.year,
+            //     first_name: $scope.fname,
+            //     last_name: $scope.lname,
+            //     cvv: $scope.cvv,
+            //     address1: $scope.address1,
+            //     address2: $scope.address2,
+            //     city: $scope.city,
+            //     state: $scope.state,
+            //     postal_code: $scope.postal_code,
+            //     country: 'US',
+            //     phone: $scope.phone,
+            //     plan_code: $scope.terms,
+            //     account_code: sessionStorage.email
+            // };
+
+
+            var billingInfo = {
+                number: '4111111111111111',
+                month: '12',
+                year: '2016',
+                first_name: 'Holly',
+                last_name: 'Holmes',
+                cvv: '123',
+                address1: '223 Market St',
+                address2: 'Apt 6',
+                city: 'Philadelphia',
+                state: 'PA',
+                postal_code: '19006',
+                country: 'US',
+                phone: '2154434343',
+                plan_code: '12',
+                account_code: 'jimmychi45555@yahoo.com'
+            };                                        
+
+
+
+
+          recurly.token(billingInfo, function (err, token) {
+
+              // send any errors to the error function below
+              if (err){
+                  $scope.err = "The following items are invalid:<br />";
+
+                  //If more than one error need to loop through the err.fields array.
+                  angular.forEach(err.fields, function(value, index){
+                    if(value == 'number') $scope.err += 'Credit card number<br />';
+                    if(value == 'month') $scope.err += 'Expiration month<br />';
+                    if(value == 'year') $scope.err += 'Expiration year<br />';
+                    if(value == 'postal_code') $scope.err += 'Postal code<br />';
+                  }) 
+
+                  //Allows html in angular string
+                  //$scope.trustedHtml = $sce.trustAsHtml($scope.err);
+
+              // Otherwise send token to recurly
+              }else{
+
+                  console.log(token);
+
+
+                    var recurlyURL = 'https://purebox-2.recurly.com/v2/accounts';
+                    var method = 'POST'
+                    var xhr = new XMLHttpRequest();
+
+                    if ("withCredentials" in xhr){
+                        xhr.open(method, recurlyURL, true);
+                        xhr.setRequestHeader("Access-Control-Allow-Origin", "*");
+                        xhr.setRequestHeader('Content-Type', 'application/json');
+                        xhr.setRequestHeader('Api-Key', '5c1f6c37157b4e7ea3cf87f1e9c1a23c');
+                    } else if (typeof XDomainRequest != "undefined"){
+                        xhr = new XDomainRequest();
+                        xhr.open(method, recurlyURL, true);
+                    } else {
+                        xhr = null;
+                    }
+                    return xhr;
+
+                 //  $http({
+                 //    url: '/api/subscriptions/new',
+                 //    method: 'POST',
+                 //    dataType: 'json',
+                 //    data: { token_id: token.id, 
+                 //            plan_code: sessionStorage.terms,
+                 //            email: sessionStorage.email
+                 //          }
+                 // }).then(function successCallback(response) {
+                  
+                 //      //Set loggedIn to change the Sign Up button to say Account
+                 //      sessionStorage.loggedIn = true;
+
+                 //      //Redirect to Confirmation page call asynchronously
+                 //      redirect();
+
+                 //  }, function errorCallback(response) {
+                 //      // called asynchronously if an error occurs
+                 //      // or server returns response with an error status.
+                 //      console.log("error");
+                 //  });
+              }
+
+          })//end recurly.token
+
+
+}
+        //var recurlyURL = "https://purebox-2.recurly.com/v2/accounts/api/subscriptions/new";
+
+        // function createCORSRequest(method, recurlyURL) {
+        //     console.log(recurlyURL);
+        //     var xhr = new XMLHttpRequest();
+
+        //     if ("withCredentials" in xhr){
+        //         xhr.open(method, recurlyURL, true);
+        //         xhr.setRequestHeader("Access-Control-Allow-Origin", "*");
+        //         xhr.setRequestHeader('Content-Type', 'application/json');
+        //         xhr.setRequestHeader('Api-Key', 'b11a1458cff04df5b3344e8913487368');
+        //     } else if (typeof XDomainRequest != "undefined"){
+        //         xhr = new XDomainRequest();
+        //         xhr.open(method, recurlyURL, true);
+        //     } else {
+        //         xhr = null;
+        //     }
+        //     return xhr;
+        // }
+        
+        // var request = createCORSRequest("POST", recurlyURL);
+        // if (request) {
+        //     request.onload = function() {
+        //         //do something with request.responseText
+        //         console.log(this.responseText);
+        //         $('#test').html(this.responseText);
+        //     };
+        //     request.send(body);
+        //     console.log(body);
+        // }
+
+    </script>
+  
+</body>
+
+</html>

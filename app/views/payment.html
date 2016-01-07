@@ -1,0 +1,43 @@
+<div class="checkout-container">
+  <div class='row center'>  
+    <h2>Payment</h2>
+    <hr />
+    <div class="col-md-12">
+        <form recurly-form="CALLBACK" role="form" ng-init="setFormScope(this)" ng-submit="checkout()">
+          4111111111111111<br />
+            <div>
+              <label for="number">Card Number*</label>
+              <input type="text" required data-recurly="number" id="number" ng-model="number">
+            </div>
+
+            <div class="date">
+              <label for="month">Month*</label>
+              <input type="text" required data-recurly="month" id="month" maxlength="2" ng-model="month">
+            </div>
+
+            <div class="date">
+              <label for="year">Year*</label>
+              <input type="text" required data-recurly="year" id="year" maxlength="4" ng-model="year">
+            </div>
+
+            <div class="number">
+              <label for="cvv">CVV*</label>
+              <input type="text" required data-recurly="cvv" id="cvv" maxlength="3" ng-model="cvv">
+            </div>
+
+            <br />     
+            *Required fields
+            <br />      
+            <input type="hidden" data-recurly="token" name="recurly-token" id="token" ng-model="token">
+                       
+            <br />
+
+            <button class="btn btn-default btn-lg">Submit</button>
+            <p ng-show="err" class="error" ng-bind-html="trustedHtml">{{err}}</p>
+
+            <br /><br /><br /><br /><br /><br /><br /><br />
+
+        </form>
+    </div>   
+  </div>
+</div>

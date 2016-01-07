@@ -1,0 +1,135 @@
+<!doctype html>
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+ 
+
+
+
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/app.css">    
+    <!-- endbuild -->
+
+
+    <!-- Material Design Lite -->  
+    <link rel="stylesheet" href="styles/css/material.indigo-red.min.css">
+    <script src="//storage.googleapis.com/code.getmdl.io/1.0.2/material.min.js"></script>
+    <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons"> 
+    
+    <!-- Google Fonts -->
+    <link href='//fonts.googleapis.com/css?family=Roboto+Slab:300' rel='stylesheet' type='text/css'>
+        
+    <!-- CSS Files comes here -->
+    <link href="styles/css/grid12.css" rel="stylesheet" media="screen">                                 <!-- Grid System -->
+    <link href="styles/css/james_typography.css" rel="stylesheet" media="screen">                       <!-- Typography -->
+    <link href="styles/css/main.css" rel="stylesheet" media="screen">                                   <!-- Main CSS file -->
+    <link href="styles/css/color_scheme_light.css" rel="stylesheet" media="screen">                     <!-- Color_scheme -->
+    <link href="styles/css/responsive.css" rel="stylesheet" media="screen">                             <!-- Responsive Fixes -->
+    <link href="styles/css/animate.css" rel="stylesheet" media="screen">                                <!-- Animate - animations -->
+    <link href="styles/css/nivo-lightbox.css" rel="stylesheet" media="screen">                          <!-- Lightbox Styles -->
+    <link href="styles/css/nivo_lightbox_themes/default/default.css" rel="stylesheet" media="screen">   <!-- Lightbox Styles -->
+    <link href="styles/css/owl.carousel.css" rel="stylesheet" media="screen">                           <!-- Owl - Carousel -->
+    <link href="styles/css/owl.theme.css" rel="stylesheet" media="screen">                              <!-- Owl - Carousel -->
+    <link href="styles/css/subscribe.css" rel="stylesheet" media="screen">
+
+    <!-- Modernizer and IE specyfic files -->  
+    <script src="scripts/js/modernizr.custom.js"></script>
+
+    <!-- LeadDyno -->
+    <script src="https://static.leaddyno.com/js"></script>
+</head>
+
+<body ng-app="pureboxLoginApp">
+    
+    <div ng-view></div>
+    
+    <!-- Footer #################### -->
+    <section id="footer" class="mdl-color--primary mdl-color-text--color-2" style="position:relative; z-index:100;">
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 align-center">
+                    <p>Made with <i class="material-icons mdl-color-text--accent">&#xE87D;</i> by <a href="http://www.100percentpure.com" class="mdl-color-text--color-2"><strong>100% Pure&copy;</strong></a></p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- //Footer -->
+
+
+
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID
+    <script>
+    ! function (A, n, g, u, l, a, r) {
+        A.GoogleAnalyticsObject = l, A[l] = A[l] || function () {
+                (A[l].q = A[l].q || []).push(arguments)
+            }, A[l].l = +new Date, a = n.createElement(g),
+            r = n.getElementsByTagName(g)[0], a.src = u, r.parentNode.insertBefore(a, r)
+    }(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-XXXXX-X');
+    ga('send', 'pageview');
+    </script>
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-aria/angular-aria.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-messages/angular-messages.js"></script>
+    <script src="bower_components/angular-payments/lib/angular-payments.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/firebase/firebase.js"></script>
+    <script src="bower_components/angularfire/dist/angularfire.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/angularfire/config.js"></script>
+    <script src="scripts/angularfire/firebase.ref.js"></script>
+    <script src="scripts/controllers/chat.js"></script>
+    <script src="scripts/controllers/header.js"></script>
+    <script src="scripts/filters/reverse.js"></script>
+    <script src="scripts/angularfire/auth.js"></script>
+    <script src="scripts/controllers/login.js"></script>
+    <script src="scripts/controllers/account.js"></script>
+    <script src="scripts/controllers/sign-up.js"></script>
+    <script src="scripts/controllers/subscribe.js"></script>
+    <script src="scripts/directives/ngShowAuth.js"></script>
+    <script src="scripts/directives/ngHideAuth.js"></script>
+    <script src="scripts/routes.js"></script>
+    <script src='scripts/leaddyno.js'></script>
+    <!-- endbuild -->
+
+    <!-- JavaScript plugins comes here -->  
+    <script src="scripts/js/jquery-2.1.3.min.js"></script>        <!-- jQuery -->
+    <script src="scripts/js/jquery.easing.min.js"></script>       <!-- jQuery easing -->    
+    <script src="scripts/js/jquery.scrollTo.js"></script>         <!-- Scroll to -->
+    <script src="scripts/js/jquery.cycle.all.min.js"></script>    <!-- jQuery cycle -->
+    <script src="scripts/js/jquery.form.js"></script>             <!-- jQuery form -->
+    <script src="scripts/js/classie.js"></script>                 <!-- Class helper function -->
+    <script src="scripts/js/waypoints.min.js"></script>           <!-- Waypoints -->
+    <script src="scripts/js/nivo-lightbox.min.js"></script>       <!-- Lightbox/Modalbox -->
+    <script src="scripts/js/jquery.fitvids.js"></script>          <!-- Responsive Video -->
+    <script src="scripts/js/owl.carousel.js"></script>            <!-- Owl Carousel -->
+    <script src="scripts/js/fastclick.js"></script>               <!-- FastClick -->  
+    <script src="scripts/js/main.js"></script>                    <!-- Main Js file -->
+  
+</body>
+
+</html>

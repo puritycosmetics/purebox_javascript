@@ -1,0 +1,47 @@
+<div class="container" ng-init="getSubscriptionInfo()">
+  <div class="account-container">
+        <h1 class="center">Subscription</h1>
+        <div class="row">
+              <a href="/">PureBox</a>
+        </div>                
+        <h3>{{profile.fname}}&nbsp;{{profile.lname}}</h3>
+        <hr />      
+        <div class="row">
+
+          <h4>Update your subscription</h4>
+          <div class="sub">
+              <strong>Invoice: </strong>{{ subscription_invoice }}<br />
+          </div>
+          <div class="sub">
+            <strong>Start date: </strong>{{ subscription_start_date }}<br />
+          </div>
+          <div class="sub">
+            <strong>End date: </strong>{{ subscription_end_date }}<br />
+          </div>          
+          <div class="sub">
+            <label for="subscription_plan_code">Terms: </label>{{ subscription_plan_name }}<br /><br />{{ subscription_plan_code }}<br />
+            Update to:&nbsp;<select name="subscription_plan_code" ng-model="subscription_plan_code">
+              <option value="monthly">Monthly</option>
+              <option value="6month">6 months</option>
+              <option value="12month">12 months</option>
+            </select>
+          </div>                       
+        </div>
+
+
+          <div class="row errorDiv">
+              {{ errMsg }}
+          </div>
+
+          <div class="row center">
+              <br />
+              <button ng-click="updateSubscription()" class="btn btn-default btn-lg" style="cursor:pointer">Update Subscription</button>
+              &nbsp;&nbsp;&nbsp;&nbsp;
+              <button ng-click="redirect()" class="btn btn-default btn-lg" style="cursor:pointer">Back to Account Page</button>
+          </div>
+
+          <br /><br /><br /><br /><br /><br /><br />
+
+        <div ng-repeat="message in messages" class="alert alert-{{message.type}}">{{message.text}}</div>
+    </div>
+</div>

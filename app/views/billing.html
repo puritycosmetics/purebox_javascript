@@ -1,0 +1,108 @@
+<div>
+  <div class='row center'>
+        <h2><a href="/">PureBox</a></h2>
+        <hr />     
+        <div class="col-md-12" class="sign-up-container">
+        <div class="row center">
+              <strong>Subscription length:</strong><br />
+              {{ terms }}<br />
+              <strong>Total:</strong><br />
+              ${{ total }}<br />
+        </div>
+        <div class="row">
+          <strong>Shipping Information</strong><br />
+          {{ fname_shipping }} {{ lname_shipping }}<br />
+          {{ address1_shipping }} {{ address2_shipping }}<br />
+          {{ city_shipping }}, {{ state_shipping }} {{ postal_code_shipping }}<br /> 
+          {{ phone_shipping }}
+        </div>  
+
+        <div class="row" ng-hide="sameBilling==false">
+          <strong>Billing Information</strong><br />
+          {{ fname_billing }} {{ lname_billing }}<br />
+          {{ address1_billing }} {{ address2_billing }}<br />
+          {{ city_billing }}, {{ state_billing }} {{ postal_code_billing }}<br /> 
+          {{ phone_billing }}
+        </div>
+
+        <br />      
+        <form recurly-form="CALLBACK" role="form" ng-init="setFormScope(this)" ng-submit="checkout()">
+          <div ng-hide="sameBilling==true">
+            <h4>Billing</h4>
+            <div class="row">
+              <label for="loginFname">First Name</label><br />
+              <input id="loginFname" class="form-control" required name="fname" type="text" ng-model="fname_billing" />
+            </div>
+            <div class="row">
+              <label for="loginLname">Last Name</label><br />
+              <input id="loginLname" class="form-control" required name="lname" type="text" ng-model="lname_billing" />
+            </div>
+
+            <div class="address1">
+              <label for="address1">Address 1*</label><br />
+              <input type="text" required data-recurly="address1" id="address1" ng-model="address1_billing">
+            </div>
+
+            <div class="address2">
+              <label for="address2">Address 2</label><br />
+              <input type="text" data-recurly="address2" id="address2" ng-model="address2_billing">
+            </div>
+
+            <div>
+              <label for="city">City*</label><br />
+              <input type="text" required data-recurly="city" id="city" ng-model="city_billing">
+            </div>
+
+            <div>
+              <label for="state">State*</label><br />
+              <input type="text" required data-recurly="state" id="state" ng-model="state_billing">
+            </div>
+
+            <div>
+              <label for="postal_code">Postal Code*</label><br />
+              <input type="text" required data-recurly="postal_code" id="postal_code" ng-model="postal_code_billing">
+            </div>
+            <div>
+              <label for="phone">Phone</label><br />
+              <input type="text" required data-recurly="phone" id="phone" ng-model="phone_billing">
+            </div>
+          </div>  
+            <br />
+            4111111111111111
+            <br />
+            <div>
+              <label for="number">Card Number*</label><br />
+              <input type="text" required data-recurly="number" id="number" ng-model="number">
+            </div>
+
+            <div class="date">
+              <label for="month">Month*</label><br />
+              <input type="text" required data-recurly="month" id="month" maxlength="2" ng-model="month">
+            </div>
+
+            <div class="date">
+              <label for="year">Year*</label><br />
+              <input type="text" required data-recurly="year" id="year" maxlength="4" ng-model="year">
+            </div>
+
+            <div class="number">
+              <label for="cvv">CVV*</label><br />
+              <input type="text" required data-recurly="cvv" id="cvv" maxlength="3" ng-model="cvv">
+            </div>                           
+
+            <p ng-show="err" class="error">{{ err.code }}</p><br />      
+            <button class="btn btn-default btn-lg">Continue</button>
+            <div class="row" ng-init="shipping=true">
+                  <br />     
+                  *Required fields                        
+                  <br />
+                  <!--input type="radio" ng-model="shipping" ng-value="true" name="shipping" title="Ship to the same address">
+                  <label for="shipping">Ship to the same address</label><br />
+                  <input type="radio"ng-model="shipping" ng-value="false" name="shipping" title="Ship to a different address">
+                  <label for="shipping">Ship to a different address</label-->
+                  <br /><br /><br /><br /><br /><br /><br /><br /><br />
+            </div>
+        </form>
+    </div>       
+  </div>
+</div>

@@ -22,29 +22,29 @@ angular.module('pureboxProductionApp')
 
     $scope.checkout = function() {
 
-          // Reset the errors display
-          $scope.err = "";
+          //Checkout form passed to recurly.token
+          var billingInfo = {      
 
+            number: document.getElementById('number').value;
+            month: document.getElementById('month').value;
+            year: document.getElementById('year').value;
+            fname: document.getElementById('fname').value;
+            last: document.getElementById('lname').value;
+            cvv: document.getElementById('cvv').value;
+            address1: document.getElementById('address1').value;
+            address2: document.getElementById('address2 ').value;
+            city: document.getElementById('city').value;
+            state: document.getElementById('state').value;
+            postal_code: document.getElementById('postal_code').value;
+            country: 'US';
+            phone: document.getElementById('phone').value;
+            plan_code: document.getElementById('plan_code').value;
+            account_code: sessionStorage.email; 
+
+          };
+            
           // Disable the submit button
 
-          //Checkout form passed to recurly.token
-          var billingInfo = {
-            number: $scope.number,
-            month: $scope.month,
-            year: $scope.year,
-            first_name: $scope.fname,
-            last_name: $scope.lname,
-            cvv: $scope.cvv,
-            address1: $scope.address1,
-            address2: $scope.address2,
-            city: $scope.city,
-            state: $scope.state,
-            postal_code: $scope.postal_code,
-            country: 'US',
-            phone: $scope.phone,
-            plan_code: $scope.terms,
-            account_code: sessionStorage.email
-          };
 
           // Now we call recurly.token with the form. It goes to Recurly servers
           // to tokenize the credit card information, then injects the token into the
@@ -53,8 +53,9 @@ angular.module('pureboxProductionApp')
 
               // send any errors to the error function below
               if (err){
-                  $scope.err = "The following items are invalid:<br />";
+                  console.log("The following items are invalid");
 
+                  /*  
                   //If more than one error need to loop through the err.fields array.
                   angular.forEach(err.fields, function(value, index){
                     if(value == 'number') $scope.err += 'Credit card number<br />';
@@ -62,13 +63,14 @@ angular.module('pureboxProductionApp')
                     if(value == 'year') $scope.err += 'Expiration year<br />';
                     if(value == 'postal_code') $scope.err += 'Postal code<br />';
                   }) 
-
-                  //Allows html in angular string
-                  $scope.trustedHtml = $sce.trustAsHtml($scope.err);
+                  */
 
               // Otherwise send token to recurly
               }else{
 
+                console.log("token: " + token.id);
+
+/*
                   $http({
                     url: '/api/subscriptions/new',
                     method: 'POST',
@@ -90,6 +92,7 @@ angular.module('pureboxProductionApp')
                       // or server returns response with an error status.
                       console.log("error");
                   });
+*/                  
               }
 
           })//end recurly.token

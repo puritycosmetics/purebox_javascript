@@ -60,10 +60,6 @@ angular.module('pureboxProductionApp')
     //$locationProvider.html5Mode(true).hashPrefix('#');
 
     $routeProvider
-      .when('/', {
-        templateUrl: 'views/home.html',
-        controller: 'MainCtrl'
-      }) 
       .when('/login', {
         templateUrl: 'views/login.html',
         controller: 'LoginCtrl'
@@ -83,12 +79,7 @@ angular.module('pureboxProductionApp')
       .when('/confirmation', {
         templateUrl: 'views/confirmation.html',
         controller: 'ConfirmationCtrl'
-      })     
-      .when('/subscribe', {
-       templateUrl: 'views/subscribe.html',        
-       controller: 'SubscribeCtrl'
       })
-
       .whenAuthenticated('/account', {
         templateUrl: 'views/account.html',
         controller: 'AccountCtrl'

@@ -81,110 +81,84 @@
     </header>
     <!-- // Menu bar -->
 
-    <div class="container subscribe-container">
-            <div class="row center">
-                <h2>Start by creating your custom profile</h2>
-                Let us know your skin type, skin tone, and subscription term so that we can set up your PureBox.
-                <hr />
+<div class="checkout-container">
+  <div class='row center'>  
+    <h2>Billing information</h2>
+    <hr />
+    <div class="col-md-12">
+        <form recurly-form="CALLBACK" role="form" ng-submit="checkout()">
+          4111111111111111<br />
+            <div>
+              <label for="number">Card Number*</label>
+              <input type="text" required data-recurly="number" id="number">
             </div>
-            <div class="row">
-                  <a href="/">PureBox</a>
-            </div>             
-            <div class="row">
-                <h3>Select your skin tone</h3>
-                <div class="col-md-3 profile" onclick="profile.setSkinTone('Alpine')">
-                    <div class="sub" onclick="profile.setSelected(this,'skintone');">
-                        Alpine Rose
-                    </div>    
-                </div>
-                <div class="col-md-3 profile" onclick="profile.setSkinTone('Creme')">
-                    <div class="sub" onclick="profile.setSelected(this,'skintone');">
-                        Creme Porcelain
-                    </div>    
-                </div>
-                <div class="col-md-3 profile" onclick="profile.setSkinTone('White Peach')">
-                    <div class="sub" onclick="profile.setSelected(this,'skintone');">
-                        White Peach
-                    </div>    
-                </div>
-                <div class="col-md-3 profile" onclick="profile.setSkinTone('Peach Bisque')">
-                    <div class="sub" onclick="profile.setSelected(this,'skintone');">
-                        Peach Bisque
-                    </div>    
-                </div>                
+
+            <div class="date">
+              <label for="month">Month*</label>
+              <input type="text" required data-recurly="month" id="month" maxlength="2">
             </div>
-            <div class="row profile-row">
-                <div class="col-md-3 profile" onclick="profile.setSkinTone('Golden Peach')">
-                    <div class="sub" onclick="profile.setSelected(this,'skintone');">
-                        Golden Peach
-                    </div>    
-                </div>
-                <div class="col-md-3 profile" onclick="profile.setSkinTone('Toffee')">
-                    <div class="sub" onclick="profile.setSelected(this,'skintone');">
-                        Toffee
-                    </div>    
-                </div>
-                <div class="col-md-3 profile" onclick="profile.setSkinTone('Mousse')">
-                    <div class="sub" onclick="profile.setSelected(this,'skintone');">
-                        Mouse
-                    </div>    
-                </div>
-                <div class="col-md-3 profile" onclick="profile.setSkinTone('Cocoa')">
-                    <div class="sub" onclick="profile.setSelected(this,'skintone');">
-                        Cocoa
-                    </div>      
-                </div>                
-            </div>            
-            <div class="row profile-row">
-                <h3>Select your skin type</h3>
-                <div class="col-md-3 profile" onclick="profile.setSkinType('Dry')">
-                    <div class="sub" id="dry" onclick="profile.setSelected(this,'skintype')">
-                        Dry
-                    </div>    
-                </div>
-                <div class="col-md-3 profile" onclick="profile.setSkinType('Normal')">
-                    <div class="sub" id="normal" onclick="profile.setSelected(this,'skintype')">
-                        Normal
-                    </div>    
-                </div>
-                <div class="col-md-3 profile" onclick="profile.setSkinType('Oily')">
-                    <div class="sub" id="oily" onclick="profile.setSelected(this,'skintype')">
-                        Oily
-                    </div>    
-                </div>
-                <div class="col-md-3 profile" onclick="profile.setSkinType('Combo')">
-                    <div class="sub" id="combo" onclick="profile.setSelected(this,'skintype')">
-                        Combo
-                    </div>    
-                </div>
+
+            <div class="date">
+              <label for="year">Year*</label>
+              <input type="text" required data-recurly="year" id="year" maxlength="4">
             </div>
-            <div class="row profile-row" ng-hide="hideDiv">
-                <h3>Select your subscription term</h3>
-                <div class="col-md-4 profile terms" onclick="profile.setTerms(1)">
-                    <div class="sub" onclick="profile.setSelected(this,'terms')">
-                        Month to month
-                    </div>    
-                </div>
-                <div class="col-md-4 profile terms" onclick="profile.setTerms(6)">
-                    <div class="sub" onclick="profile.setSelected(this,'terms')">
-                        6 months
-                    </div>
-                </div>
-                <div class="col-md-4 profile terms" onclick="profile.setTerms(12)">
-                    <div class="sub" onclick="profile.setSelected(this,'terms')">
-                        12 months
-                    </div>
-                </div>                                                
+
+            <div class="number">
+              <label for="cvv">CVV*</label>
+              <input type="text" required data-recurly="cvv" id="cvv" maxlength="3">
             </div>
-            <div class="row errorDiv">
-                <span id="errMsg"></span>
-            </div>            
-            <div class="row center">
-                <br />        
-                <a onClick="profile.validateProfile()" class="btn btn-default btn-lg" style="cursor:pointer">Submit Profile</a>
-                <!--a ng-click="validateProfile()" class="btn btn-default btn-lg">Submit Profile</a-->
-            </div>            
-    </div>
+
+            <div>
+              <label for="first_name">First Name*</label>
+              <input type="text" required data-recurly="first_name" id="first_name">
+            </div>
+
+            <div>
+              <label for="last_name">Last Name*</label>
+              <input type="text" required data-recurly="last_name" id="last_name">
+            </div>
+
+            <div class="address1">
+              <label for="address1">Address*</label>
+              <input type="text" required data-recurly="address1" id="address1">
+            </div>
+
+            <div>
+              <label for="city">City*</label>
+              <input type="text" required data-recurly="city" id="city">
+            </div>
+
+            <div>
+              <label for="state">State*</label>
+              <input type="text" required data-recurly="state" id="state">
+            </div>
+
+            <div>
+              <label for="postal_code">Postal Code*</label>
+              <input type="text" required data-recurly="postal_code" id="postal_code">
+            </div>
+
+            <div>
+              <label for="phone">Phone</label>
+              <input type="text" required data-recurly="phone" id="phone">
+            </div>               
+            <br />     
+            *Required fields
+            <br />      
+            <input type="hidden" data-recurly="token" name="recurly-token" id="token">
+                       
+            <br />
+
+            <button class="btn btn-default btn-lg" onclick="checkout();return false;">Checkout</button>
+            <p class="error"></p>
+
+            <br /><br /><br /><br /><br /><br /><br /><br />
+
+        </form>
+    </div>   
+  </div>
+</div>
+
     <br />
     <a onclick="checkout()">Checkout</a><br />          
     
@@ -273,7 +247,7 @@
 
 
             var billingInfo = {
-                number: '4111-1111-1111-1111',
+                number: '4111111111111111',
                 month: '12',
                 year: '2016',
                 first_name: 'Holly',
@@ -314,13 +288,17 @@
               }else{
 
                   console.log(token);
+
+
+                    var recurlyURL = 'https://purebox-2.recurly.com/v2/accounts';
+                    var method = 'POST'
                     var xhr = new XMLHttpRequest();
 
                     if ("withCredentials" in xhr){
                         xhr.open(method, recurlyURL, true);
                         xhr.setRequestHeader("Access-Control-Allow-Origin", "*");
                         xhr.setRequestHeader('Content-Type', 'application/json');
-                        xhr.setRequestHeader('Api-Key', 'b11a1458cff04df5b3344e8913487368');
+                        xhr.setRequestHeader('Api-Key', '5c1f6c37157b4e7ea3cf87f1e9c1a23c');
                     } else if (typeof XDomainRequest != "undefined"){
                         xhr = new XDomainRequest();
                         xhr.open(method, recurlyURL, true);

@@ -1,13 +1,13 @@
 var Recurly = require('node-recurly');
 var express = require('express');
 var bodyParser = require('body-parser');
-
+var request = require('request')
 // We'll use uuids to generate account_code values
 var uuid = require('node-uuid');
 
 var http = require('http');
 // var https = require('https');
-var port = process.env.PORT || 1337;
+var port = process.env.PORT || 1338;
 var path = require('path');
 
 var app = express();
@@ -83,6 +83,23 @@ app.post('/api/billing/update', function (req, res) {
 })
 */
 
+
+//POST request
+request({
+    url: 'https://app.eztexting.com/contacts?format=json',
+    method: 'POST',
+    json: {
+        User: '100pure',
+        Password: '100Pure226!',
+        PhoneNumber: '2134398809'
+    }
+}, function(error, response, body){
+    if(error) {
+        console.log(error);
+    } else {
+        console.log(response.statusCode, body);
+}
+
 //Get account info
 app.get('/api/accounts/get', function (req, res) {
 
@@ -93,19 +110,15 @@ app.get('/api/accounts/get', function (req, res) {
           return;
         }
 
-        if (response) {
-
-          //Otherwise return account info.
-          res.set('Content-Type', 'application/json'); // Tell Angular that this is JSON
+        if(response) {
           res.send(response);
-
         }  
     }
   ); 
 })
 
 //Get subscription info
-app.get('/api/subscriptions/get', function (req, res){
+app.get('/api/listByAccount/get', function (req, res){
   recurly.subscriptions.listByAccount(req.query.email,  
     function (err, response) {
       if (err) {
@@ -114,9 +127,6 @@ app.get('/api/subscriptions/get', function (req, res){
       }
 
       if(response){
-
-        //Otherwise return account info.
-        res.set('Content-Type', 'application/json'); // Tell Angular that this is JSON
         res.send(response);
 
       }  
@@ -186,19 +196,18 @@ app.put('/api/subscriptions/update', function (req, res) {
 //Create new subscription
 app.post('/api/subscriptions/new', function (req, res) {
 
-  console.log(req.body['shippingInfo'].postal_code);
-  console.log(req.body['shippingInfo'].phone);
+  console.log(req.body['token_id'])
 
   recurly.subscriptions.create({
     plan_code: req.body['plan_code'],
     currency: 'USD',
     account: {
       address: {
-        address1: req.body['shippingInfo'].address1,
-        address2: req.body['shippingInfo'].address2,
-        city: req.body['shippingInfo'].city,
-        state: req.body['shippingInfo'].state,
-        zip: req.body['shippingInfo'].postal_code
+        address1: req.body['address1'],
+        address2: req.body['address2'],
+        city: req.body['city'],
+        state: req.body['state'],
+        zip: req.body['postal_code']
       },  
       account_code: req.body['email'],
       email: req.body['email'],
@@ -208,14 +217,12 @@ app.post('/api/subscriptions/new', function (req, res) {
     }
   }, function (err, response) {
     if (err) {
-      console.log("*** New subscription error ***");
-      console.log(err);
+      res.send(err.data.errors.error._);
     }
 
     if(response) {
-      //Otherwise redirect to a confirmation page.  Send back JSON to redirect on front end.
-      //res.redirect does not work because of path
-      res.send({'success': 'success'});
+      console.log(response)
+      res.send(response.responseText);
     }
 
   });

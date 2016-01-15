@@ -36,7 +36,6 @@
     <link href="styles/css/nivo_lightbox_themes/default/default.css" rel="stylesheet" media="screen">   <!-- Lightbox Styles -->
     <link href="styles/css/owl.carousel.css" rel="stylesheet" media="screen">                           <!-- Owl - Carousel -->
     <link href="styles/css/owl.theme.css" rel="stylesheet" media="screen">                              <!-- Owl - Carousel -->
-    <link href="styles/css/subscribe.css" rel="stylesheet" media="screen">
 
     <!-- Modernizer and IE specyfic files -->  
     <script src="scripts/js/modernizr.custom.js"></script>
@@ -119,9 +118,14 @@
             </div>
 
             <div class="address1">
-              <label for="address1">Address*</label>
+              <label for="address1">Address 1*</label>
               <input type="text" required data-recurly="address1" id="address1">
             </div>
+
+            <div class="address2">
+              <label for="address2">Address 2</label>
+              <input type="text" required data-recurly="address1" id="address2">
+            </div>            
 
             <div>
               <label for="city">City*</label>
@@ -149,7 +153,7 @@
                        
             <br />
 
-            <button class="btn btn-default btn-lg" onclick="checkout();return false;">Checkout</button>
+            <button class="btn btn-default btn-lg" id="checkoutBtn">Checkout</button>
             <p class="error"></p>
 
             <br /><br /><br /><br /><br /><br /><br /><br />
@@ -220,120 +224,121 @@
     <script src="scripts/js/subscribe.js"></script>               <!-- Subscribe Js file -->
 
     <script>
+        $(function() {
 
-        function checkout(){
+            $('#checkoutBtn').click(function(e) {
+                e.preventDefault();
 
             // Configure recurly.js
             var x = recurly.configure('sjc-17qcx07uRgUUxXLBx4HIAw');
 
-            // //Checkout form passed to recurly.token
-            // var billingInfo = {
-            //     number: $scope.number,
-            //     month: $scope.month,
-            //     year: $scope.year,
-            //     first_name: $scope.fname,
-            //     last_name: $scope.lname,
-            //     cvv: $scope.cvv,
-            //     address1: $scope.address1,
-            //     address2: $scope.address2,
-            //     city: $scope.city,
-            //     state: $scope.state,
-            //     postal_code: $scope.postal_code,
-            //     country: 'US',
-            //     phone: $scope.phone,
-            //     plan_code: $scope.terms,
-            //     account_code: sessionStorage.email
-            // };
-
-
             var billingInfo = {
-                number: '4111111111111111',
-                month: '12',
-                year: '2016',
-                first_name: 'Holly',
-                last_name: 'Holmes',
-                cvv: '123',
-                address1: '223 Market St',
-                address2: 'Apt 6',
-                city: 'Philadelphia',
-                state: 'PA',
-                postal_code: '19006',
+                number: document.getElementById('number').value,
+                month: document.getElementById('month').value,
+                year: document.getElementById('year').value,
+                first_name: document.getElementById('first_name').value,
+                last_name: document.getElementById('last_name').value,
+                cvv: document.getElementById('cvv').value,
+                address1: document.getElementById('address1').value,
+                address2: document.getElementById('address2').value,
+                city: document.getElementById('city').value,
+                state: document.getElementById('state').value,
+                postal_code: document.getElementById('postal_code').value,
                 country: 'US',
-                phone: '2154434343',
-                plan_code: '12',
-                account_code: 'jimmychi45555@yahoo.com'
-            };                                        
+                phone: document.getElementById('phone').value,
+                plan_code: sessionStorage.getItem('terms'),
+                account_code: sessionStorage.getItem('email')
+            };  
 
+            // var billingInfo = {
+            //     number: '4111111111111111',
+            //     month: '12',
+            //     year: '2017',
+            //     first_name: 'Hulk',
+            //     last_name: 'Hogan',
+            //     cvv: '422',
+            //     address1: '433 Main St.',
+            //     address2: 'Apt 6',
+            //     city: 'San Jose',
+            //     state: 'CA',
+            //     postal_code: '21102',
+            //     country: 'US',
+            //     phone: '2134450987',
+            //     plan_code: '1',
+            //     account_code: 'stephcurry4424@msn.com'
+            // };                                                  
 
+            // var data = {
+            //     address1: '233 Main St.',
+            //     address2: 'Apt 5',
+            //     city: 'San Jose',
+            //     state: 'CA',
+            //     postal_code: '19006',
+            //     country: 'US',
+            //     phone: '2134439867',
+            //     token_id: token.id, 
+            //     plan_code: '6',
+            //     email: 'stephcurry4424@msn.com'
+            // };
 
 
           recurly.token(billingInfo, function (err, token) {
 
               // send any errors to the error function below
               if (err){
-                  $scope.err = "The following items are invalid:<br />";
+                  console.log(err);
 
                   //If more than one error need to loop through the err.fields array.
+                  /*
                   angular.forEach(err.fields, function(value, index){
                     if(value == 'number') $scope.err += 'Credit card number<br />';
                     if(value == 'month') $scope.err += 'Expiration month<br />';
                     if(value == 'year') $scope.err += 'Expiration year<br />';
                     if(value == 'postal_code') $scope.err += 'Postal code<br />';
                   }) 
-
-                  //Allows html in angular string
-                  //$scope.trustedHtml = $sce.trustAsHtml($scope.err);
+                  */  
 
               // Otherwise send token to recurly
               }else{
 
-                  console.log(token);
+                    var data = {
+                        address1: document.getElementById('address1').value,
+                        address2: document.getElementById('address2').value,
+                        city: document.getElementById('city').value,
+                        state: document.getElementById('state').value,
+                        postal_code: document.getElementById('postal_code').value,
+                        country: 'US',
+                        phone: document.getElementById('phone').value,
+                        token_id: token.id, 
+                        plan_code: sessionStorage.terms,
+                        email: sessionStorage.email
+                    }; 
 
+                    $.ajax({ 
+                       url: '/api/subscriptions/new',
+                       type: 'POST',               
+                       dataType: 'xml',
+                       data: JSON.stringify(data),
+                       contentType: 'application/json',                       
+                       error: function(error) {
+                            document.getElementsByClassName('error')[0].innerHTML = error.responseText;
+                       },
+                       success: function(success) {
+                            window.location.href = "confirmation.html";
+                       }                       
+                    });
 
-                    var recurlyURL = 'https://purebox-2.recurly.com/v2/accounts';
-                    var method = 'POST'
-                    var xhr = new XMLHttpRequest();
+                    
 
-                    if ("withCredentials" in xhr){
-                        xhr.open(method, recurlyURL, true);
-                        xhr.setRequestHeader("Access-Control-Allow-Origin", "*");
-                        xhr.setRequestHeader('Content-Type', 'application/json');
-                        xhr.setRequestHeader('Api-Key', '5c1f6c37157b4e7ea3cf87f1e9c1a23c');
-                    } else if (typeof XDomainRequest != "undefined"){
-                        xhr = new XDomainRequest();
-                        xhr.open(method, recurlyURL, true);
-                    } else {
-                        xhr = null;
-                    }
-                    return xhr;
-
-                 //  $http({
-                 //    url: '/api/subscriptions/new',
-                 //    method: 'POST',
-                 //    dataType: 'json',
-                 //    data: { token_id: token.id, 
-                 //            plan_code: sessionStorage.terms,
-                 //            email: sessionStorage.email
-                 //          }
-                 // }).then(function successCallback(response) {
-                  
-                 //      //Set loggedIn to change the Sign Up button to say Account
                  //      sessionStorage.loggedIn = true;
 
-                 //      //Redirect to Confirmation page call asynchronously
-                 //      redirect();
-
-                 //  }, function errorCallback(response) {
-                 //      // called asynchronously if an error occurs
-                 //      // or server returns response with an error status.
-                 //      console.log("error");
-                 //  });
               }
 
           })//end recurly.token
 
+        });//end checkout function
 
-}
+
         //var recurlyURL = "https://purebox-2.recurly.com/v2/accounts/api/subscriptions/new";
 
         // function createCORSRequest(method, recurlyURL) {
@@ -364,7 +369,7 @@
         //     request.send(body);
         //     console.log(body);
         // }
-
+})
     </script>
   
 </body>

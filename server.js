@@ -38,21 +38,52 @@ var recurly = new Recurly({
   DEBUG: false
 });
 
-// app.get('/', function(req, res) {
+app.get('/', function(req, res) {
 
-//   // var options = {
-//   //   root: __dirname + '/public/',
-//   //   dotfiles: 'deny',
-//   //   headers: {
-//   //       'x-timestamp': Date.now(),
-//   //       'x-sent': true
-//   //   }
-//   // };
+  // var options = {
+  //   root: __dirname + '/public/',
+  //   dotfiles: 'deny',
+  //   headers: {
+  //       'x-timestamp': Date.now(),
+  //       'x-sent': true
+  //   }
+  // };
 
-//   var fileName = req.params.name;
-//   res.sendFile(path.join(__dirname + '/app/index.html'));
+  var fileName = req.params.name;
+  res.sendFile(path.join(__dirname + '/app/index.html'));
 
-// });
+});
+
+
+
+//Texting API
+app.post('/api/text/new', function (req, res) {
+
+//Texting API test
+    request({
+        url: 'https://app.eztexting.com/contacts?format=json',
+        method: 'POST',
+        json: {
+            User: '100pure',
+            Password: '100Pure226!',
+            PhoneNumber: '2159354499'
+        }
+    }, function(error, response, body){
+        if(error) {
+            console.log(error);
+        } else {
+            console.log(response.statusCode, body);
+    }
+});
+
+
+
+
+})
+
+
+
+
 
 /*
 //Update Billing info
@@ -82,25 +113,6 @@ app.post('/api/billing/update', function (req, res) {
   //console.log(JSON.stringify(req.body));
 })
 */
-
-
-
-//Texting API test
-    request({
-        url: 'https://app.eztexting.com/contacts?format=json',
-        method: 'POST',
-        json: {
-            User: '100pure',
-            Password: '100Pure226!',
-            PhoneNumber: '2159354432'
-        }
-    }, function(error, response, body){
-        if(error) {
-            console.log(error);
-        } else {
-            console.log(response.statusCode, body);
-    }
-});
 
 
 //Get account info

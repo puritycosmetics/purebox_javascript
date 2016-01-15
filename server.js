@@ -72,7 +72,9 @@ app.post('/api/text/new', function (req, res) {
         if(error) {
             console.log(error);
         } else {
+            console.log("*** Errors ***");
             console.log(response.statusCode, body);
+            res.send(response);
     }
 });
 

@@ -43,6 +43,7 @@ $(function() {
           url: "/api/text/new",
           method: "POST",
           success: function(data) {
+            console.log("success");
             console.log(data);      
           },
           error: function(error) {

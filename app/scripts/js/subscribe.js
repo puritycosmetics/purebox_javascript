@@ -61,17 +61,14 @@ Profile.prototype.validateProfile = function(){
 		x.innerHTML = "Please select all items!";
 	}else{
 
-		Profile.prototype.setSessionVars();
+		//Set as sessionStorage in case user refreshes
+		sessionStorage.setItem('skintype', profile.skintype);
+		sessionStorage.setItem('skintone', profile.skintone);
+		sessionStorage.setItem('terms', profile.terms);
 
 		window.location.href = "sign-up.html";
+
 	}
-}
-
-Profile.prototype.setSessionVars = function(){
-	sessionStorage.setItem('skintype', profile.skintype);
-	sessionStorage.setItem('skintone', profile.skintone);
-	sessionStorage.setItem('terms', profile.terms);
-
 }
 
 Profile.prototype.signUp = function(){
@@ -112,7 +109,11 @@ Profile.prototype.signUp = function(){
 		        console.log("Error creating user:", error);
 		    }
 		  } else {
+
+		  	//Set sessionStorage email
+		  	sessionStorage.setItem('email', profile.email);
 		    profile.createProfile();
+
 		  }
 		});
 	}	
@@ -121,14 +122,8 @@ Profile.prototype.signUp = function(){
 
 Profile.prototype.createProfile = function() {
 
-	var ref = new Firebase("https://purebox-production.firebaseIO.com");
-/*
-	var skintype = sessionStorage.getItem('skintype');
-	var skintone = sessionStorage.getItem('skintone');
-	var terms = sessionStorage.getItem('terms');
-*/
-
-	console.log("skintype: " + sessionStorage.skintype);
+	var ref = new Firebase("https://purebox-production.firebaseIO.com/users");
+	//var ref = Ref.child('users').child(emailToKey(email)), def = $q.defer();
 
 	//Set profile to firebase
 	var onComplete = function(error) {
@@ -139,7 +134,7 @@ Profile.prototype.createProfile = function() {
 	  }
 	};
 
-    ref.set({
+    ref.child(profile.emailToKey(this.email)).set({
       skintone: sessionStorage.skintone,
       skintype: sessionStorage.skintype,
       term: sessionStorage.terms, 
@@ -148,7 +143,80 @@ Profile.prototype.createProfile = function() {
       lname: this.lname
     }, onComplete);
 }
+Profile.prototype.getInvoiceNumber = function(link_url) {
+
+	var n = link_url.lastIndexOf('/');
+	var invoice_num = link_url.substring(n + 1);
+	console.log(invoice_num)
+    return invoice_num;
+
+}
+Profile.prototype.capitalizeFirst = function(str) {
+
+	var res = str.charAt(0).toUpperCase() + str.slice(1);
+	return res;
+
+}
+Profile.prototype.emailToKey = function(emailAddress) {
+       return emailAddress.replace('.', ',');
+}
+Profile.prototype.displayProfile = function() {
+
+	var ref = new Firebase("https://purebox-production.firebaseIO.com");
+	console.log(ref.child('users').equalTo(sessionStorage.email));
+
+	// console.log(profile.skintype);
+	// document.getElementById('skintype').innerHTML = this.skintype;
+
+}
+
 
 //Create profile instance
 var profile = new Profile();
+profile.displayProfile();
+
+$(function() {
+
+      //Get account info  
+      $.ajax({ 
+         url: '/api/accounts/get?email=' + sessionStorage.email,
+         type: 'GET',               
+         dataType: 'json',            
+         success: function(data) {
+
+            document.getElementById('first_name').innerHTML = data.data.billing_info.first_name;
+            document.getElementById('last_name').innerHTML = data.data.billing_info.last_name;
+            document.getElementById('address1').innerHTML = data.data.billing_info.address1;
+            document.getElementById('address2').innerHTML = data.data.billing_info.address2;
+            document.getElementById('city').innerHTML = data.data.billing_info.city;
+            document.getElementById('state').innerHTML = data.data.billing_info.state;
+            document.getElementById('zip').innerHTML = data.data.billing_info.zip;
+            document.getElementById('phone').innerHTML = data.data.billing_info.phone;    
+         }
+      });
+
+      //Get account info  
+      $.ajax({ 
+         url: '/api/listByAccount/get?email=' + sessionStorage.email,
+         type: 'GET',               
+         dataType: 'json',            
+         success: function(data) {
+            console.log(data);
+            // document.getElementById('activated_at').innerHTML = data.subscriptions.subscription.activated_at;
+            document.getElementById('current_state').innerHTML = profile.capitalizeFirst(data.data.subscriptions.subscription.state);
+
+            var x = document.getElementById('invoice');
+            if(x) x.innerHTML = profile.getInvoiceNumber(data.data.subscriptions.subscription.invoice.$.href);
+
+            document.getElementById('total').innerHTML = data.data.subscriptions.subscription.unit_amount_in_cents._;
+            document.getElementById('plan_code').innerHTML = data.data.subscriptions.subscription.plan.name;
+
+            //Need to add   
+            document.getElementById('start_date').innerHTML = data.data.subscriptions.subscription.current_period_started_at._;
+
+            document.getElementById('expires_at').innerHTML = data.data.subscriptions.subscription.current_period_ends_at._;
+         }
+      });
+
+})
 

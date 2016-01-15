@@ -64,9 +64,9 @@ app.post('/api/text/new', function (req, res) {
         url: 'https://app.eztexting.com/contacts?format=json',
         method: 'POST',
         json: {
-            User: '100pure',
-            Password: '100Pure226!',
-            PhoneNumber: '2159354499'
+            User: req.body['user'],
+            Password: req.body['password'],
+            PhoneNumber: req.body['phone']
         }
     }, function(error, response, body){
         if(error) {

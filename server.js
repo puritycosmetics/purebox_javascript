@@ -1,7 +1,7 @@
 var Recurly = require('node-recurly');
 var express = require('express');
 var bodyParser = require('body-parser');
-var request = require('request')
+
 // We'll use uuids to generate account_code values
 var uuid = require('node-uuid');
 
@@ -54,39 +54,6 @@ app.get('/', function(req, res) {
 
 });
 
-
-
-//Texting API
-app.post('/api/text/new', function (req, res) {
-
-//Texting API test
-    request({
-        url: 'https://app.eztexting.com/contacts?format=json',
-        method: 'POST',
-        json: {
-            User: req.body['user'],
-            Password: req.body['password'],
-            PhoneNumber: req.body['phone']
-        }
-    }, function(error, response, body){
-        if(error) {
-            console.log(error);
-        } else {
-            console.log("*** Errors ***");
-            console.log(response.statusCode, body);
-            res.send(response);
-    }
-});
-
-
-
-
-})
-
-
-
-
-
 /*
 //Update Billing info
 app.post('/api/billing/update', function (req, res) {
@@ -115,7 +82,6 @@ app.post('/api/billing/update', function (req, res) {
   //console.log(JSON.stringify(req.body));
 })
 */
-
 
 //Get account info
 app.get('/api/accounts/get', function (req, res) {

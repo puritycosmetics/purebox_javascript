@@ -8,7 +8,7 @@
     "js-yaml": "^3.4.3",
     "js2xmlparser": "^1.0.0",
     "json-middleware": "^1.0.2",
-    "node-recurly": "node-recurly",
+    "node-recurly": "2.1.0",
     "node-uuid": "^1.4.1",
     "path": "^0.12.7",
     "recurly-js": "^2.1.3",

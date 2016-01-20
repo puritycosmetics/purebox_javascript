@@ -1,0 +1,911 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'node-recurly' ]
+2 info using npm@2.14.7
+3 info using node@v4.2.2
+4 verbose install initial load of /Users/administrator/Projects/purebox_javascript/package.json
+5 warn package.json pureboxproduction@0.0.0 No license field.
+6 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/abbrev/package.json
+7 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/accepts/package.json
+8 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/acorn/package.json
+9 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/alter/package.json
+10 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/amdefine/package.json
+11 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/ansi-escapes/package.json
+12 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/ansi-regex/package.json
+13 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/ansi-styles/package.json
+14 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/ansicolors/package.json
+15 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/archive-type/package.json
+16 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/archy/package.json
+17 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/argparse/package.json
+18 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/array-differ/package.json
+19 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/array-filter/package.json
+20 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/array-flatten/package.json
+21 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/array-map/package.json
+22 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/array-reduce/package.json
+23 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/array-union/package.json
+24 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/array-uniq/package.json
+25 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/arrify/package.json
+26 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/asn1/package.json
+27 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/assert-plus/package.json
+28 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/async/package.json
+29 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/async-each-series/package.json
+30 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/autoprefixer-core/package.json
+31 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/aws-sign2/package.json
+32 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/balanced-match/package.json
+33 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/base64-url/package.json
+34 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/basic-auth/package.json
+35 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/basic-auth-connect/package.json
+36 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/batch/package.json
+37 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/beeper/package.json
+38 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/bin-build/package.json
+39 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/bin-check/package.json
+40 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/bin-version/package.json
+41 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/bin-version-check/package.json
+42 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/bin-wrapper/package.json
+43 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/binary/package.json
+44 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/bl/package.json
+45 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/body-parser/package.json
+46 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/boom/package.json
+47 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/bower/package.json
+48 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/bower-config/package.json
+49 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/bower-endpoint-parser/package.json
+50 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/bower-json/package.json
+51 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/bower-logger/package.json
+52 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/bower-registry-client/package.json
+53 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/brace-expansion/package.json
+54 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/browserify-zlib/package.json
+55 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/browserslist/package.json
+56 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/buffer-to-vinyl/package.json
+57 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/buffers/package.json
+58 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/builtin-modules/package.json
+59 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/bytes/package.json
+60 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/camel-case/package.json
+61 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/camelcase/package.json
+62 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/camelcase-keys/package.json
+63 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/caniuse-db/package.json
+64 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/capture-stack-trace/package.json
+65 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/cardinal/package.json
+66 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/caseless/package.json
+67 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/caw/package.json
+68 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/cdnjs-cdn-data/package.json
+69 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/chainsaw/package.json
+70 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/chalk/package.json
+71 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/change-case/package.json
+72 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/chmodr/package.json
+73 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/clean-css/package.json
+74 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/cli/package.json
+75 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/cli-color/package.json
+76 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/cli-cursor/package.json
+77 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/cli-width/package.json
+78 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/clone/package.json
+79 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/clone-stats/package.json
+80 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/co/package.json
+81 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/coa/package.json
+82 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/code-point-at/package.json
+83 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/coffee-script/package.json
+84 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/colors/package.json
+85 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/combined-stream/package.json
+86 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/commander/package.json
+87 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/compressible/package.json
+88 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/compression/package.json
+89 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/concat-map/package.json
+90 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/concat-stream/package.json
+91 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/config-chain/package.json
+92 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/configstore/package.json
+93 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/connect/package.json
+94 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/connect-livereload/package.json
+95 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/connect-multiparty/package.json
+96 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/connect-timeout/package.json
+97 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/console-browserify/package.json
+98 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/constant-case/package.json
+99 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/content-disposition/package.json
+100 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/content-type/package.json
+101 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/convert-source-map/package.json
+102 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/cookie/package.json
+103 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/cookie-parser/package.json
+104 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/cookie-signature/package.json
+105 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/core-util-is/package.json
+106 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/crc/package.json
+107 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/create-error-class/package.json
+108 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/cryptiles/package.json
+109 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/csrf/package.json
+110 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/csurf/package.json
+111 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/ctype/package.json
+112 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/d/package.json
+113 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/date-now/package.json
+114 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/date-time/package.json
+115 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/dateformat/package.json
+116 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/debug/package.json
+117 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/decamelize/package.json
+118 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/decompress/package.json
+119 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/decompress-tar/package.json
+120 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/decompress-tarbz2/package.json
+121 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/decompress-targz/package.json
+122 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/decompress-unzip/package.json
+123 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/decompress-zip/package.json
+124 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/deep-extend/package.json
+125 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/delayed-stream/package.json
+126 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/depd/package.json
+127 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/destroy/package.json
+128 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/diff/package.json
+129 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/dom-serializer/package.json
+130 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/domelementtype/package.json
+131 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/domhandler/package.json
+132 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/domutils/package.json
+133 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/dot-case/package.json
+134 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/download/package.json
+135 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/duplexer2/package.json
+136 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/duplexify/package.json
+137 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/each-async/package.json
+138 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/ee-first/package.json
+139 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/end-of-stream/package.json
+140 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/entities/package.json
+141 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/error-ex/package.json
+142 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/errorhandler/package.json
+143 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/es5-ext/package.json
+144 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/es6-iterator/package.json
+145 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/es6-promise/package.json
+146 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/es6-symbol/package.json
+147 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/es6-weak-map/package.json
+148 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/escape-html/package.json
+149 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/escape-string-regexp/package.json
+150 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/esprima/package.json
+151 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/etag/package.json
+152 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/event-emitter/package.json
+153 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/eventemitter2/package.json
+154 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/exec-buffer/package.json
+155 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/exec-series/package.json
+156 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/executable/package.json
+157 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/exit/package.json
+158 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/exit-hook/package.json
+159 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/express/package.json
+160 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/express-session/package.json
+161 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/faye-websocket/package.json
+162 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/fd-slicer/package.json
+163 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/figures/package.json
+164 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/file-type/package.json
+165 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/filename-reserved-regex/package.json
+166 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/filenamify/package.json
+167 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/finalhandler/package.json
+168 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/find-index/package.json
+169 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/find-up/package.json
+170 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/find-versions/package.json
+171 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/findup-sync/package.json
+172 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/first-chunk-stream/package.json
+173 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/forever-agent/package.json
+174 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/form-data/package.json
+175 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/forwarded/package.json
+176 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/fresh/package.json
+177 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/fstream/package.json
+178 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/fstream-ignore/package.json
+179 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/gaze/package.json
+180 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/get-proxy/package.json
+181 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/get-stdin/package.json
+182 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/getobject/package.json
+183 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/gifsicle/package.json
+184 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/github/package.json
+185 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/glob/package.json
+186 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/glob-stream/package.json
+187 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/glob-watcher/package.json
+188 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/glob2base/package.json
+189 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/globule/package.json
+190 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/google-cdn/package.json
+191 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/google-cdn-data/package.json
+192 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/got/package.json
+193 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/graceful-fs/package.json
+194 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/graceful-readlink/package.json
+195 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/grunt/package.json
+196 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/grunt-autoprefixer/package.json
+197 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/grunt-concurrent/package.json
+198 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/grunt-contrib-clean/package.json
+199 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/grunt-contrib-concat/package.json
+200 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/grunt-contrib-connect/package.json
+201 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/grunt-contrib-copy/package.json
+202 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/grunt-contrib-cssmin/package.json
+203 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/grunt-contrib-htmlmin/package.json
+204 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/grunt-contrib-imagemin/package.json
+205 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/grunt-contrib-jshint/package.json
+206 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/grunt-contrib-uglify/package.json
+207 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/grunt-contrib-watch/package.json
+208 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/grunt-filerev/package.json
+209 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/grunt-google-cdn/package.json
+210 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/grunt-legacy-log/package.json
+211 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/grunt-legacy-log-utils/package.json
+212 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/grunt-legacy-util/package.json
+213 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/grunt-newer/package.json
+214 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/grunt-ng-annotate/package.json
+215 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/grunt-svgmin/package.json
+216 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/grunt-usemin/package.json
+217 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/grunt-wiredep/package.json
+218 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/gulp-decompress/package.json
+219 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/gulp-rename/package.json
+220 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/gulp-util/package.json
+221 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/gzip-size/package.json
+222 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/handlebars/package.json
+223 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/has-ansi/package.json
+224 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/has-color/package.json
+225 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/hawk/package.json
+226 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/hoek/package.json
+227 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/hooker/package.json
+228 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/hosted-git-info/package.json
+229 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/html-minifier/package.json
+230 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/htmlparser2/package.json
+231 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/http-errors/package.json
+232 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/http-signature/package.json
+233 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/iconv-lite/package.json
+234 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/imagemin/package.json
+235 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/imagemin-gifsicle/package.json
+236 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/imagemin-jpegtran/package.json
+237 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/imagemin-optipng/package.json
+238 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/imagemin-svgo/package.json
+239 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/indent-string/package.json
+240 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/infinity-agent/package.json
+241 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/inflight/package.json
+242 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/inherits/package.json
+243 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/ini/package.json
+244 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/inquirer/package.json
+245 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/insight/package.json
+246 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/intersect/package.json
+247 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/ip-regex/package.json
+248 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/ipaddr.js/package.json
+249 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/is-absolute/package.json
+250 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/is-builtin-module/package.json
+251 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/is-bzip2/package.json
+252 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/is-finite/package.json
+253 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/is-fullwidth-code-point/package.json
+254 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/is-gif/package.json
+255 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/is-gzip/package.json
+256 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/is-jpg/package.json
+257 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/is-lower-case/package.json
+258 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/is-natural-number/package.json
+259 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/is-npm/package.json
+260 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/is-obj/package.json
+261 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/is-plain-obj/package.json
+262 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/is-png/package.json
+263 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/is-redirect/package.json
+264 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/is-relative/package.json
+265 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/is-root/package.json
+266 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/is-stream/package.json
+267 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/is-svg/package.json
+268 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/is-tar/package.json
+269 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/is-upper-case/package.json
+270 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/is-url/package.json
+271 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/is-utf8/package.json
+272 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/is-zip/package.json
+273 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/isarray/package.json
+274 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/isstream/package.json
+275 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/jpegtran-bin/package.json
+276 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/js-base64/package.json
+277 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/js-yaml/package.json
+278 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/js2xmlparser/package.json
+279 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/jshint/package.json
+280 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/jshint-stylish/package.json
+281 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/json-middleware/package.json
+282 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/json-stringify-safe/package.json
+283 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/jsonify/package.json
+284 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/junk/package.json
+285 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/latest-version/package.json
+286 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/lazy-req/package.json
+287 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/load-grunt-tasks/package.json
+288 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/load-json-file/package.json
+289 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/lockfile/package.json
+290 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/lodash/package.json
+291 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/lodash._basecopy/package.json
+292 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/lodash._basetostring/package.json
+293 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/lodash._basevalues/package.json
+294 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/lodash._getnative/package.json
+295 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/lodash._isiterateecall/package.json
+296 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/lodash._isnative/package.json
+297 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/lodash._objecttypes/package.json
+298 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/lodash._reescape/package.json
+299 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/lodash._reevaluate/package.json
+300 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/lodash._reinterpolate/package.json
+301 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/lodash.debounce/package.json
+302 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/lodash.escape/package.json
+303 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/lodash.isarguments/package.json
+304 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/lodash.isarray/package.json
+305 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/lodash.isfunction/package.json
+306 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/lodash.isobject/package.json
+307 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/lodash.keys/package.json
+308 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/lodash.now/package.json
+309 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/lodash.restparam/package.json
+310 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/lodash.template/package.json
+311 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/lodash.templatesettings/package.json
+312 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/log-symbols/package.json
+313 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/logalot/package.json
+314 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/longest/package.json
+315 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/loud-rejection/package.json
+316 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/lower-case/package.json
+317 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/lower-case-first/package.json
+318 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/lowercase-keys/package.json
+319 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/lpad/package.json
+320 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/lpad-align/package.json
+321 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/lru-cache/package.json
+322 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/lru-queue/package.json
+323 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/map-obj/package.json
+324 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/maxmin/package.json
+325 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/md5-hex/package.json
+326 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/md5-o-matic/package.json
+327 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/media-typer/package.json
+328 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/memoizee/package.json
+329 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/meow/package.json
+330 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/merge-descriptors/package.json
+331 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/merge-stream/package.json
+332 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/method-override/package.json
+333 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/methods/package.json
+334 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/mime/package.json
+335 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/mime-db/package.json
+336 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/mime-types/package.json
+337 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/minimatch/package.json
+338 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/minimist/package.json
+339 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/mkdirp/package.json
+340 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/mkpath/package.json
+341 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/morgan/package.json
+342 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/mout/package.json
+343 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/ms/package.json
+344 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/multimatch/package.json
+345 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/multiparty/package.json
+346 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/multipipe/package.json
+347 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/mute-stream/package.json
+348 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/negotiator/package.json
+349 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/nested-error-stacks/package.json
+350 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/next-tick/package.json
+351 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/ng-annotate/package.json
+352 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/node-status-codes/package.json
+353 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/node-uuid/package.json
+354 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/nopt/package.json
+355 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/noptify/package.json
+356 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/normalize-package-data/package.json
+357 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/npmconf/package.json
+358 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/num2fraction/package.json
+359 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/number-is-nan/package.json
+360 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/oauth-sign/package.json
+361 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/object-assign/package.json
+362 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/on-finished/package.json
+363 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/on-headers/package.json
+364 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/once/package.json
+365 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/onetime/package.json
+366 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/opn/package.json
+367 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/optimist/package.json
+368 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/optional/package.json
+369 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/optipng-bin/package.json
+370 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/ordered-ast-traverse/package.json
+371 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/ordered-esprima-props/package.json
+372 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/ordered-read-streams/package.json
+373 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/os-filter-obj/package.json
+374 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/os-homedir/package.json
+375 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/os-name/package.json
+376 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/os-tmpdir/package.json
+377 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/osenv/package.json
+378 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/osx-release/package.json
+379 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/p-throttler/package.json
+380 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/package-json/package.json
+381 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/pad-stdio/package.json
+382 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/pako/package.json
+383 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/param-case/package.json
+384 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/parse-json/package.json
+385 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/parse-ms/package.json
+386 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/parseurl/package.json
+387 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/pascal-case/package.json
+388 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/path/package.json
+389 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/path-case/package.json
+390 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/path-exists/package.json
+391 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/path-to-regexp/package.json
+392 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/path-type/package.json
+393 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/pause/package.json
+394 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/pend/package.json
+395 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/pify/package.json
+396 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/pinkie/package.json
+397 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/pinkie-promise/package.json
+398 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/pkg-up/package.json
+399 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/plur/package.json
+400 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/portscanner/package.json
+401 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/postcss/package.json
+402 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/prepend-http/package.json
+403 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/pretty-bytes/package.json
+404 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/pretty-ms/package.json
+405 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/process/package.json
+406 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/process-nextick-args/package.json
+407 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/promptly/package.json
+408 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/propprop/package.json
+409 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/proto-list/package.json
+410 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/proxy-addr/package.json
+411 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/pump/package.json
+412 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/punycode/package.json
+413 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/q/package.json
+414 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/qs/package.json
+415 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/range-parser/package.json
+416 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/raw-body/package.json
+417 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/rc/package.json
+418 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/read/package.json
+419 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/read-all-stream/package.json
+420 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/read-chunk/package.json
+421 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/read-pkg/package.json
+422 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/read-pkg-up/package.json
+423 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/readable-stream/package.json
+424 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/readline2/package.json
+425 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/recurly-js/package.json
+426 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/redent/package.json
+427 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/redeyed/package.json
+428 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/regexp-quote/package.json
+429 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/registry-url/package.json
+430 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/relateurl/package.json
+431 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/repeating/package.json
+432 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/replace-ext/package.json
+433 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/request/package.json
+434 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/request-progress/package.json
+435 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/request-replay/package.json
+436 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/response-time/package.json
+437 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/restore-cursor/package.json
+438 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/retry/package.json
+439 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/rimraf/package.json
+440 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/rndm/package.json
+441 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/run-async/package.json
+442 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/rx/package.json
+443 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/rx-lite/package.json
+444 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/sax/package.json
+445 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/scmp/package.json
+446 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/seek-bzip/package.json
+447 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/semver/package.json
+448 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/semver-diff/package.json
+449 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/semver-regex/package.json
+450 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/semver-truncate/package.json
+451 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/send/package.json
+452 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/sentence-case/package.json
+453 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/serve-favicon/package.json
+454 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/serve-index/package.json
+455 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/serve-static/package.json
+456 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/set-immediate-shim/package.json
+457 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/shell-quote/package.json
+458 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/shelljs/package.json
+459 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/sigmund/package.json
+460 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/simple-fmt/package.json
+461 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/simple-is/package.json
+462 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/slide/package.json
+463 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/snake-case/package.json
+464 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/sntp/package.json
+465 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/source-map/package.json
+466 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/spdx-correct/package.json
+467 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/spdx-exceptions/package.json
+468 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/spdx-expression-parse/package.json
+469 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/spdx-license-ids/package.json
+470 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/sprintf-js/package.json
+471 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/squeak/package.json
+472 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/stable/package.json
+473 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/stat-mode/package.json
+474 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/statuses/package.json
+475 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/stream-combiner2/package.json
+476 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/stream-counter/package.json
+477 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/string-length/package.json
+478 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/string_decoder/package.json
+479 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/stringify-object/package.json
+480 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/stringmap/package.json
+481 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/stringset/package.json
+482 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/stringstream/package.json
+483 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/strip-ansi/package.json
+484 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/strip-bom/package.json
+485 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/strip-dirs/package.json
+486 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/strip-indent/package.json
+487 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/strip-json-comments/package.json
+488 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/strip-outer/package.json
+489 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/sum-up/package.json
+490 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/supports-color/package.json
+491 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/svgo/package.json
+492 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/swap-case/package.json
+493 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/tar-fs/package.json
+494 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/tar-stream/package.json
+495 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/tempfile/package.json
+496 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/text-table/package.json
+497 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/throttleit/package.json
+498 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/through/package.json
+499 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/through2/package.json
+500 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/through2-filter/package.json
+501 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/time-grunt/package.json
+502 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/timed-out/package.json
+503 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/timers-ext/package.json
+504 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/tiny-lr-fork/package.json
+505 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/title-case/package.json
+506 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/tmp/package.json
+507 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/touch/package.json
+508 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/tough-cookie/package.json
+509 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/traverse/package.json
+510 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/trim-newlines/package.json
+511 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/trim-repeated/package.json
+512 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/tryor/package.json
+513 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/tunnel-agent/package.json
+514 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/type-is/package.json
+515 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/typedarray/package.json
+516 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/uglify-js/package.json
+517 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/uglify-to-browserify/package.json
+518 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/uid-number/package.json
+519 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/uid-safe/package.json
+520 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/underscore/package.json
+521 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/underscore.string/package.json
+522 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/unique-stream/package.json
+523 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/unpipe/package.json
+524 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/unzip-response/package.json
+525 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/update-notifier/package.json
+526 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/upper-case/package.json
+527 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/upper-case-first/package.json
+528 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/uri-path/package.json
+529 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/url-regex/package.json
+530 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/urlencode/package.json
+531 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/user-home/package.json
+532 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/util/package.json
+533 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/util-deprecate/package.json
+534 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/utils-merge/package.json
+535 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/uuid/package.json
+536 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/validate-npm-package-license/package.json
+537 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/vary/package.json
+538 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/vhost/package.json
+539 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/vinyl/package.json
+540 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/vinyl-assign/package.json
+541 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/vinyl-fs/package.json
+542 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/ware/package.json
+543 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/whet.extend/package.json
+544 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/which/package.json
+545 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/win-release/package.json
+546 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/window-size/package.json
+547 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/wiredep/package.json
+548 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/wordwrap/package.json
+549 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/wrap-fn/package.json
+550 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/wrappy/package.json
+551 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/write-file-atomic/package.json
+552 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/xdg-basedir/package.json
+553 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/xml2js/package.json
+554 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/xmlbuilder/package.json
+555 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/xtend/package.json
+556 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/yargs/package.json
+557 verbose installManyTop reading scoped package data from /Users/administrator/Projects/purebox_javascript/node_modules/yauzl/package.json
+558 info package.json aws-sign2@0.5.0 No license field.
+559 info package.json dom-serializer@0.1.0 No README data
+560 info package.json exit@0.1.2 No license field.
+561 info package.json getobject@0.1.0 No license field.
+562 info package.json globule@0.1.0 No license field.
+563 info package.json is-utf8@0.2.0 license should be a valid SPDX license expression
+564 info package.json json-middleware@1.0.2 No license field.
+565 info package.json noptify@0.0.3 No license field.
+566 info package.json pascal-case@1.1.1 No README data
+567 info package.json acorn@0.11.0 No license field.
+568 info package.json asn1@0.1.11 No license field.
+569 info package.json assert-plus@0.1.5 No license field.
+570 info package.json async@0.1.22 No license field.
+571 info package.json batch@0.5.2 No license field.
+572 info package.json boom@0.4.2 No license field.
+573 info package.json bower-config@0.6.1 No license field.
+574 info package.json bower-endpoint-parser@0.2.2 No license field.
+575 info package.json bower-logger@0.2.2 No license field.
+576 info package.json bower-registry-client@0.3.0 No license field.
+577 info package.json bower-json@0.4.0 No license field.
+578 info package.json buffers@0.1.1 No license field.
+579 info package.json caniuse-db@1.0.30000338 license should be a valid SPDX license expression
+580 info package.json caseless@0.8.0 license should be a valid SPDX license expression
+581 info package.json chainsaw@0.1.0 license should be a valid SPDX license expression
+582 info package.json chmodr@0.1.0 license should be a valid SPDX license expression
+583 info package.json cli@0.6.6 No license field.
+584 info package.json coa@1.0.1 No license field.
+585 info package.json coffee-script@1.3.3 bugs['name'] should probably be bugs['url'].
+586 info package.json coffee-script@1.3.3 No license field.
+587 info package.json colors@0.6.2 No license field.
+588 info package.json combined-stream@0.0.7 No license field.
+589 info package.json config-chain@1.1.9 No license field.
+590 info package.json configstore@0.3.2 license should be a valid SPDX license expression
+591 info package.json connect-livereload@0.5.3 No license field.
+592 info package.json console-browserify@1.1.0 No license field.
+593 info package.json cryptiles@0.2.2 No license field.
+594 info package.json ctype@0.5.3 No license field.
+595 info package.json date-now@0.1.4 No license field.
+596 info package.json dateformat@1.0.2-1.2.3 No repository field.
+597 info package.json dateformat@1.0.2-1.2.3 No license field.
+598 info package.json decompress-zip@0.1.0 No license field.
+599 info package.json delayed-stream@0.0.5 No license field.
+600 info package.json diff@1.2.2 No license field.
+601 info package.json domelementtype@1.3.0 No license field.
+602 info package.json domhandler@2.3.0 No license field.
+603 info package.json domutils@1.5.1 No license field.
+604 info package.json duplexer2@0.0.2 license should be a valid SPDX license expression
+605 info package.json entities@1.0.0 license should be a valid SPDX license expression
+606 info package.json esprima@1.0.4 No license field.
+607 info package.json faye-websocket@0.4.4 'repositories' (plural) Not supported. Please pick one as the 'repository' field
+608 info package.json faye-websocket@0.4.4 No license field.
+609 info package.json findup-sync@0.1.3 No license field.
+610 info package.json forever-agent@0.5.2 No license field.
+611 info package.json form-data@0.2.0 No license field.
+612 info package.json gaze@0.5.2 No license field.
+613 info package.json github@0.2.4 No license field.
+614 info package.json glob@3.1.21 license should be a valid SPDX license expression
+615 info package.json glob-stream@4.1.1 No license field.
+616 info package.json glob-watcher@0.0.8 No license field.
+617 info package.json glob2base@0.0.12 No license field.
+618 info package.json google-cdn@0.7.0 No license field.
+619 info package.json graceful-fs@1.2.3 license should be a valid SPDX license expression
+620 info package.json grunt@0.4.5 No license field.
+621 info package.json grunt-contrib-concat@0.5.1 No license field.
+622 info package.json grunt-contrib-clean@0.6.0 No license field.
+623 info package.json grunt-contrib-connect@0.9.0 No license field.
+624 info package.json grunt-contrib-copy@0.7.0 No license field.
+625 info package.json grunt-contrib-cssmin@0.12.3 No license field.
+626 info package.json grunt-contrib-htmlmin@0.4.0 No license field.
+627 info package.json grunt-contrib-imagemin@0.9.4 No license field.
+628 info package.json grunt-contrib-uglify@0.7.0 No license field.
+629 info package.json grunt-contrib-watch@0.6.1 No license field.
+630 info package.json grunt-filerev@2.3.1 license should be a valid SPDX license expression
+631 info package.json grunt-legacy-log@0.1.2 No license field.
+632 info package.json grunt-google-cdn@0.4.3 license should be a valid SPDX license expression
+633 info package.json grunt-legacy-log-utils@0.1.1 No license field.
+634 info package.json grunt-legacy-util@0.2.0 No license field.
+635 info package.json grunt-svgmin@2.0.1 No license field.
+636 info package.json grunt-wiredep@2.0.0 No license field.
+637 info package.json gulp-rename@1.2.2 No license field.
+638 info package.json hoek@0.9.1 No license field.
+639 info package.json hawk@1.1.1 No license field.
+640 info package.json hooker@0.2.3 No license field.
+641 info package.json html-minifier@0.7.2 license should be a valid SPDX license expression
+642 info package.json is-absolute@0.1.7 license should be a valid SPDX license expression
+643 info package.json is-natural-number@2.0.0 No license field.
+644 info package.json is-relative@0.1.3 No license field.
+645 info package.json js-base64@2.1.9 license should be a valid SPDX license expression
+646 info package.json jsonify@0.0.0 license should be a valid SPDX license expression
+647 info package.json longest@1.0.1 license should be a valid SPDX license expression
+648 info package.json md5-o-matic@0.1.1 No license field.
+649 info package.json mime@1.3.4 No license field.
+650 info package.json minimatch@0.2.14 license should be a valid SPDX license expression
+651 info package.json mout@0.11.0 No license field.
+652 info package.json ms@0.7.1 No license field.
+653 info package.json mute-stream@0.0.4 license should be a valid SPDX license expression
+654 info package.json node-uuid@1.4.3 No license field.
+655 info package.json nopt@1.0.10 license should be a valid SPDX license expression
+656 info package.json oauth-sign@0.5.0 No license field.
+657 info package.json optimist@0.6.1 license should be a valid SPDX license expression
+658 info package.json osenv@0.0.3 license should be a valid SPDX license expression
+659 info package.json pako@0.2.8 license should be a valid SPDX license expression
+660 info package.json path@0.12.7 path is also the name of a node core module.
+661 info package.json portscanner@1.0.0 No license field.
+662 info package.json process@0.11.2 process is also the name of a node core module.
+663 info package.json propprop@0.3.0 No license field.
+664 info package.json punycode@1.3.2 punycode is also the name of a node core module.
+665 info package.json q@1.4.1 license should be a valid SPDX license expression
+666 info package.json rc@0.5.5 No license field.
+667 info package.json regexp-quote@0.0.0 No license field.
+668 info package.json relateurl@0.2.6 No license field.
+669 info package.json replace-ext@0.0.1 No license field.
+670 info package.json retry@0.6.1 No license field.
+671 info package.json rimraf@2.2.8 license should be a valid SPDX license expression
+672 info package.json rx-lite@3.1.2 No license field.
+673 info package.json scmp@1.0.0 license should be a valid SPDX license expression
+674 info package.json shelljs@0.3.0 license should be a valid SPDX license expression
+675 info package.json sntp@0.2.4 No license field.
+676 info package.json stream-counter@0.2.0 license should be a valid SPDX license expression
+677 info package.json string_decoder@0.10.31 string_decoder is also the name of a node core module.
+678 info package.json stringify-object@1.0.1 license should be a valid SPDX license expression
+679 info package.json strip-dirs@1.1.1 No license field.
+680 info package.json tiny-lr-fork@0.0.5 No license field.
+681 info package.json tmp@0.0.24 No license field.
+682 info package.json traverse@0.3.9 license should be a valid SPDX license expression
+683 info package.json tunnel-agent@0.4.1 No license field.
+684 info package.json uglify-js@2.4.24 license should be a valid SPDX license expression
+685 info package.json underscore@1.7.0 No license field.
+686 info package.json underscore.string@2.2.1 No license field.
+687 info package.json update-notifier@0.3.2 license should be a valid SPDX license expression
+688 info package.json util@0.10.3 util is also the name of a node core module.
+689 info package.json utils-merge@1.0.0 No license field.
+690 info package.json uuid@2.0.1 No license field.
+691 info package.json vinyl-fs@1.0.0 No license field.
+692 info package.json window-size@0.1.0 No license field.
+693 info package.json wiredep@2.2.2 No license field.
+694 info package.json wordwrap@0.0.2 license should be a valid SPDX license expression
+695 info package.json wrap-fn@0.1.4 No license field.
+696 info package.json xtend@4.0.0 No license field.
+697 info package.json yargs@3.5.4 license should be a valid SPDX license expression
+698 verbose readDependencies loading dependencies from /Users/administrator/Projects/purebox_javascript/package.json
+699 silly cache add args [ 'node-recurly@2.1.0', null ]
+700 verbose cache add spec node-recurly@2.1.0
+701 silly cache add parsed spec Result {
+701 silly cache add   raw: 'node-recurly@2.1.0',
+701 silly cache add   scope: null,
+701 silly cache add   name: 'node-recurly',
+701 silly cache add   rawSpec: '2.1.0',
+701 silly cache add   spec: '2.1.0',
+701 silly cache add   type: 'version' }
+702 silly addNamed node-recurly@2.1.0
+703 verbose addNamed "2.1.0" is a plain semver version for node-recurly
+704 silly mapToRegistry name node-recurly
+705 silly mapToRegistry using default registry
+706 silly mapToRegistry registry https://registry.npmjs.org/
+707 silly mapToRegistry uri https://registry.npmjs.org/node-recurly
+708 verbose addNameVersion registry:https://registry.npmjs.org/node-recurly not in flight; fetching
+709 verbose request uri https://registry.npmjs.org/node-recurly
+710 verbose request no auth needed
+711 info attempt registry request try #1 at 2:14:01 PM
+712 verbose request id 88ebcfc30229d06c
+713 verbose etag "2XDNGZ2291UDRJMANG2O8SPIS"
+714 http request GET https://registry.npmjs.org/node-recurly
+715 http 304 https://registry.npmjs.org/node-recurly
+716 verbose headers { date: 'Wed, 20 Jan 2016 22:14:01 GMT',
+716 verbose headers   via: '1.1 varnish',
+716 verbose headers   'cache-control': 'max-age=300',
+716 verbose headers   etag: '"2XDNGZ2291UDRJMANG2O8SPIS"',
+716 verbose headers   age: '192',
+716 verbose headers   connection: 'keep-alive',
+716 verbose headers   'x-served-by': 'cache-sjc3128-SJC',
+716 verbose headers   'x-cache': 'HIT',
+716 verbose headers   'x-cache-hits': '1',
+716 verbose headers   'x-timer': 'S1453328041.439696,VS0,VE0',
+716 verbose headers   vary: 'Accept' }
+717 silly get cb [ 304,
+717 silly get   { date: 'Wed, 20 Jan 2016 22:14:01 GMT',
+717 silly get     via: '1.1 varnish',
+717 silly get     'cache-control': 'max-age=300',
+717 silly get     etag: '"2XDNGZ2291UDRJMANG2O8SPIS"',
+717 silly get     age: '192',
+717 silly get     connection: 'keep-alive',
+717 silly get     'x-served-by': 'cache-sjc3128-SJC',
+717 silly get     'x-cache': 'HIT',
+717 silly get     'x-cache-hits': '1',
+717 silly get     'x-timer': 'S1453328041.439696,VS0,VE0',
+717 silly get     vary: 'Accept' } ]
+718 verbose etag https://registry.npmjs.org/node-recurly from cache
+719 verbose get saving node-recurly to /Users/administrator/.npm/registry.npmjs.org/node-recurly/.cache.json
+720 silly cache afterAdd node-recurly@2.1.0
+721 verbose afterAdd /Users/administrator/.npm/node-recurly/2.1.0/package/package.json not in flight; writing
+722 verbose afterAdd /Users/administrator/.npm/node-recurly/2.1.0/package/package.json written
+723 silly install resolved [ { name: 'node-recurly',
+723 silly install resolved     description: 'Library for accessing the api for the Recurly recurring billing service.',
+723 silly install resolved     keywords: [ 'recurly', 'e-commerce', 'recurring billing' ],
+723 silly install resolved     version: '2.1.0',
+723 silly install resolved     homepage: 'https://github.com/robrighter/node-recurly',
+723 silly install resolved     author:
+723 silly install resolved      { name: 'Rob Righter',
+723 silly install resolved        email: 'robrighter@gmail.com',
+723 silly install resolved        url: 'http://github.com/robrighter' },
+723 silly install resolved     contributors: [ [Object], [Object], [Object] ],
+723 silly install resolved     bugs: { url: 'https://github.com/robrighter/node-recurly/issues' },
+723 silly install resolved     directories: { lib: './lib' },
+723 silly install resolved     main: './lib/recurly.js',
+723 silly install resolved     dependencies: { xml2js: '>= 0.4.0', js2xml: 'github:valorkin/js2xml' },
+723 silly install resolved     engines: { node: '>= 0.4' },
+723 silly install resolved     _id: 'node-recurly@2.1.0',
+723 silly install resolved     dist:
+723 silly install resolved      { shasum: '43231d7efb044a8b731f3a24eac40c304cffce7d',
+723 silly install resolved        tarball: 'http://registry.npmjs.org/node-recurly/-/node-recurly-2.1.0.tgz' },
+723 silly install resolved     _from: 'node-recurly@2.1.0',
+723 silly install resolved     _npmVersion: '1.3.11',
+723 silly install resolved     _npmUser: { name: 'robrighter', email: 'robrighter@gmail.com' },
+723 silly install resolved     maintainers: [ [Object] ],
+723 silly install resolved     _shasum: '43231d7efb044a8b731f3a24eac40c304cffce7d',
+723 silly install resolved     _resolved: 'https://registry.npmjs.org/node-recurly/-/node-recurly-2.1.0.tgz',
+723 silly install resolved     readme: 'ERROR: No README data found!' } ]
+724 info install node-recurly@2.1.0 into /Users/administrator/Projects/purebox_javascript
+725 info installOne node-recurly@2.1.0
+726 verbose installOne of node-recurly to /Users/administrator/Projects/purebox_javascript not in flight; installing
+727 verbose lock using /Users/administrator/.npm/_locks/node-recurly-6c1bacd8dfff53cf.lock for /Users/administrator/Projects/purebox_javascript/node_modules/node-recurly
+728 silly install write writing node-recurly 2.1.0 to /Users/administrator/Projects/purebox_javascript/node_modules/node-recurly
+729 verbose unbuild node_modules/node-recurly
+730 silly gentlyRm /Users/administrator/Projects/purebox_javascript/node_modules/node-recurly is being purged from base /Users/administrator/Projects/purebox_javascript
+731 verbose gentlyRm don't care about contents; nuking /Users/administrator/Projects/purebox_javascript/node_modules/node-recurly
+732 verbose tar unpack /Users/administrator/.npm/node-recurly/2.1.0/package.tgz
+733 verbose tar unpacking to /Users/administrator/Projects/purebox_javascript/node_modules/node-recurly
+734 silly gentlyRm /Users/administrator/Projects/purebox_javascript/node_modules/node-recurly is being purged
+735 verbose gentlyRm don't care about contents; nuking /Users/administrator/Projects/purebox_javascript/node_modules/node-recurly
+736 silly gunzTarPerm modes [ '755', '644' ]
+737 silly gunzTarPerm extractEntry package.json
+738 silly gunzTarPerm extractEntry .npmignore
+739 silly gunzTarPerm extractEntry README.md
+740 silly gunzTarPerm extractEntry index.js
+741 silly gunzTarPerm extractEntry LICENSE.txt
+742 silly gunzTarPerm extractEntry lib/client.js
+743 silly gunzTarPerm extractEntry lib/recurly.js
+744 silly gunzTarPerm extractEntry lib/transparent.js
+745 silly gunzTarPerm extractEntry lib/utils.js
+746 silly gunzTarPerm extractEntry lib/routes/index.js
+747 silly gunzTarPerm extractEntry lib/routes/v2.js
+748 silly gunzTarPerm extractEntry test/config-example.js
+749 silly gunzTarPerm extractEntry test/test.js
+750 verbose write writing to /Users/administrator/Projects/purebox_javascript/node_modules/node-recurly/package.json
+751 info preinstall node-recurly@2.1.0
+752 verbose readDependencies loading dependencies from /Users/administrator/Projects/purebox_javascript/node_modules/node-recurly/package.json
+753 silly prepareForInstallMany adding js2xml@github:valorkin/js2xml from node-recurly dependencies
+754 verbose readDependencies loading dependencies from /Users/administrator/Projects/purebox_javascript/node_modules/node-recurly/package.json
+755 silly cache add args [ 'js2xml@github:valorkin/js2xml', null ]
+756 verbose cache add spec js2xml@github:valorkin/js2xml
+757 silly cache add parsed spec Result {
+757 silly cache add   raw: 'js2xml@github:valorkin/js2xml',
+757 silly cache add   scope: null,
+757 silly cache add   name: 'js2xml',
+757 silly cache add   rawSpec: 'github:valorkin/js2xml',
+757 silly cache add   spec: 'github:valorkin/js2xml',
+757 silly cache add   type: 'hosted',
+757 silly cache add   hosted:
+757 silly cache add    { type: 'github',
+757 silly cache add      ssh: 'git@github.com:valorkin/js2xml.git',
+757 silly cache add      sshUrl: 'git+ssh://git@github.com/valorkin/js2xml.git',
+757 silly cache add      httpsUrl: 'git+https://github.com/valorkin/js2xml.git',
+757 silly cache add      gitUrl: 'git://github.com/valorkin/js2xml.git',
+757 silly cache add      shortcut: 'github:valorkin/js2xml',
+757 silly cache add      directUrl: 'https://raw.githubusercontent.com/valorkin/js2xml/master/package.json' } }
+758 verbose addRemoteGit caching github:valorkin/js2xml
+759 verbose addRemoteGit valorkin/js2xml is a repository hosted by github
+760 silly tryGitProto attempting to clone git://github.com/valorkin/js2xml.git
+761 silly tryClone cloning valorkin/js2xml via git://github.com/valorkin/js2xml.git
+762 verbose tryClone git-github-com-valorkin-js2xml-git-5ed473f0 not in flight; caching
+763 info git [ 'clone',
+763 info git   '--template=/Users/administrator/.npm/_git-remotes/_templates',
+763 info git   '--mirror',
+763 info git   'git://github.com/valorkin/js2xml.git',
+763 info git   '/Users/administrator/.npm/_git-remotes/git-github-com-valorkin-js2xml-git-5ed473f0' ]
+764 verbose git clone --template=/Users/administrator/.npm/_git-remotes/_templates --mirror git://github.com/valorkin/js2xml.git /Users/administrator/.npm/_git-remotes/git-github-com-valorkin-js2xml-git-5ed473f0: Cloning into bare repository '/Users/administrator/.npm/_git-remotes/git-github-com-valorkin-js2xml-git-5ed473f0'...
+764 verbose git clone --template=/Users/administrator/.npm/_git-remotes/_templates --mirror git://github.com/valorkin/js2xml.git /Users/administrator/.npm/_git-remotes/git-github-com-valorkin-js2xml-git-5ed473f0: fatal: remote error:
+764 verbose git clone --template=/Users/administrator/.npm/_git-remotes/_templates --mirror git://github.com/valorkin/js2xml.git /Users/administrator/.npm/_git-remotes/git-github-com-valorkin-js2xml-git-5ed473f0:   Repository not found.
+765 silly tryHTTPS attempting to clone git+https://github.com/valorkin/js2xml.git
+766 silly tryClone cloning valorkin/js2xml via git+https://github.com/valorkin/js2xml.git
+767 verbose tryClone https-github-com-valorkin-js2xml-git-13db0ab6 not in flight; caching
+768 info git [ 'clone',
+768 info git   '--template=/Users/administrator/.npm/_git-remotes/_templates',
+768 info git   '--mirror',
+768 info git   'https://github.com/valorkin/js2xml.git',
+768 info git   '/Users/administrator/.npm/_git-remotes/https-github-com-valorkin-js2xml-git-13db0ab6' ]
+769 verbose git clone --template=/Users/administrator/.npm/_git-remotes/_templates --mirror https://github.com/valorkin/js2xml.git /Users/administrator/.npm/_git-remotes/https-github-com-valorkin-js2xml-git-13db0ab6: Cloning into bare repository '/Users/administrator/.npm/_git-remotes/https-github-com-valorkin-js2xml-git-13db0ab6'...
+769 verbose git clone --template=/Users/administrator/.npm/_git-remotes/_templates --mirror https://github.com/valorkin/js2xml.git /Users/administrator/.npm/_git-remotes/https-github-com-valorkin-js2xml-git-13db0ab6: remote: Repository not found.
+769 verbose git clone --template=/Users/administrator/.npm/_git-remotes/_templates --mirror https://github.com/valorkin/js2xml.git /Users/administrator/.npm/_git-remotes/https-github-com-valorkin-js2xml-git-13db0ab6: fatal: repository 'https://github.com/valorkin/js2xml.git/' not found
+770 silly trySSH attempting to clone git@github.com:valorkin/js2xml.git
+771 silly tryClone cloning valorkin/js2xml via git@github.com:valorkin/js2xml.git
+772 verbose tryClone git-github-com-valorkin-js2xml-git-088b385f not in flight; caching
+773 info git [ 'clone',
+773 info git   '--template=/Users/administrator/.npm/_git-remotes/_templates',
+773 info git   '--mirror',
+773 info git   'git@github.com:valorkin/js2xml.git',
+773 info git   '/Users/administrator/.npm/_git-remotes/git-github-com-valorkin-js2xml-git-088b385f' ]
+774 error git clone --template=/Users/administrator/.npm/_git-remotes/_templates --mirror git@github.com:valorkin/js2xml.git /Users/administrator/.npm/_git-remotes/git-github-com-valorkin-js2xml-git-088b385f: Cloning into bare repository '/Users/administrator/.npm/_git-remotes/git-github-com-valorkin-js2xml-git-088b385f'...
+774 error git clone --template=/Users/administrator/.npm/_git-remotes/_templates --mirror git@github.com:valorkin/js2xml.git /Users/administrator/.npm/_git-remotes/git-github-com-valorkin-js2xml-git-088b385f: Warning: Permanently added the RSA host key for IP address '192.30.252.130' to the list of known hosts.
+774 error git clone --template=/Users/administrator/.npm/_git-remotes/_templates --mirror git@github.com:valorkin/js2xml.git /Users/administrator/.npm/_git-remotes/git-github-com-valorkin-js2xml-git-088b385f: Permission denied (publickey).
+774 error git clone --template=/Users/administrator/.npm/_git-remotes/_templates --mirror git@github.com:valorkin/js2xml.git /Users/administrator/.npm/_git-remotes/git-github-com-valorkin-js2xml-git-088b385f: fatal: Could not read from remote repository.
+774 error git clone --template=/Users/administrator/.npm/_git-remotes/_templates --mirror git@github.com:valorkin/js2xml.git /Users/administrator/.npm/_git-remotes/git-github-com-valorkin-js2xml-git-088b385f:
+774 error git clone --template=/Users/administrator/.npm/_git-remotes/_templates --mirror git@github.com:valorkin/js2xml.git /Users/administrator/.npm/_git-remotes/git-github-com-valorkin-js2xml-git-088b385f: Please make sure you have the correct access rights
+774 error git clone --template=/Users/administrator/.npm/_git-remotes/_templates --mirror git@github.com:valorkin/js2xml.git /Users/administrator/.npm/_git-remotes/git-github-com-valorkin-js2xml-git-088b385f: and the repository exists.
+775 verbose about to build /Users/administrator/Projects/purebox_javascript/node_modules/node-recurly
+776 verbose unlock done using /Users/administrator/.npm/_locks/node-recurly-6c1bacd8dfff53cf.lock for /Users/administrator/Projects/purebox_javascript/node_modules/node-recurly
+777 verbose stack Error: Command failed: git clone --template=/Users/administrator/.npm/_git-remotes/_templates --mirror git@github.com:valorkin/js2xml.git /Users/administrator/.npm/_git-remotes/git-github-com-valorkin-js2xml-git-088b385f
+777 verbose stack Cloning into bare repository '/Users/administrator/.npm/_git-remotes/git-github-com-valorkin-js2xml-git-088b385f'...
+777 verbose stack Warning: Permanently added the RSA host key for IP address '192.30.252.130' to the list of known hosts.
+777 verbose stack Permission denied (publickey).
+777 verbose stack fatal: Could not read from remote repository.
+777 verbose stack
+777 verbose stack Please make sure you have the correct access rights
+777 verbose stack and the repository exists.
+777 verbose stack
+777 verbose stack     at ChildProcess.exithandler (child_process.js:203:12)
+777 verbose stack     at emitTwo (events.js:87:13)
+777 verbose stack     at ChildProcess.emit (events.js:172:7)
+777 verbose stack     at maybeClose (internal/child_process.js:818:16)
+777 verbose stack     at Socket.<anonymous> (internal/child_process.js:319:11)
+777 verbose stack     at emitOne (events.js:77:13)
+777 verbose stack     at Socket.emit (events.js:169:7)
+777 verbose stack     at Pipe._onclose (net.js:469:12)
+778 verbose cwd /Users/administrator/Projects/purebox_javascript
+779 error Darwin 14.5.0
+780 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "node-recurly"
+781 error node v4.2.2
+782 error npm  v2.14.7
+783 error code 128
+784 error Command failed: git clone --template=/Users/administrator/.npm/_git-remotes/_templates --mirror git@github.com:valorkin/js2xml.git /Users/administrator/.npm/_git-remotes/git-github-com-valorkin-js2xml-git-088b385f
+784 error Cloning into bare repository '/Users/administrator/.npm/_git-remotes/git-github-com-valorkin-js2xml-git-088b385f'...
+784 error Warning: Permanently added the RSA host key for IP address '192.30.252.130' to the list of known hosts.
+784 error Permission denied (publickey).
+784 error fatal: Could not read from remote repository.
+784 error
+784 error Please make sure you have the correct access rights
+784 error and the repository exists.
+785 error If you need help, you may report this error at:
+785 error     <https://github.com/npm/npm/issues>
+786 verbose exit [ 1, true ]
+787 verbose unbuild node_modules/node-recurly
+788 info preuninstall node-recurly@2.1.0
+789 info uninstall node-recurly@2.1.0
+790 verbose unbuild rmStuff node-recurly@2.1.0 from /Users/administrator/Projects/purebox_javascript/node_modules
+791 info postuninstall node-recurly@2.1.0
+792 silly gentlyRm /Users/administrator/Projects/purebox_javascript/node_modules/node-recurly is being purged from base /Users/administrator/Projects/purebox_javascript
+793 verbose gentlyRm don't care about contents; nuking /Users/administrator/Projects/purebox_javascript/node_modules/node-recurly
+794 silly vacuum-fs purging /Users/administrator/Projects/purebox_javascript/node_modules/node-recurly
+795 silly vacuum-fs quitting because other entries in /Users/administrator/Projects/purebox_javascript/node_modules

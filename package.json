@@ -2,7 +2,6 @@
   "name": "pureboxproduction",
   "version": "0.0.0",
   "dependencies": {
-    "angular-payments": "^1.0.7",
     "body-parser": "^1.13.3",
     "connect-multiparty": "^2.0.0",
     "express": "^4.3.2",
